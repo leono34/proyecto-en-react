@@ -3,7 +3,9 @@ import React from "react";
 function Main(props) {
   const { children } = props;
   return (
-    <main>{children}</main>
+    <main> 
+          {/* {children}   */}
+    </main>
   )
 }
 

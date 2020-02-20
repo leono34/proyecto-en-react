@@ -24,6 +24,9 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
+    <link href="https://stackpath.bootstrapcdn.com/
+    font-awesome/4.7.0/css/font-awesome.min.css" 
+    rel="stylesheet">
     <title>React App</title>
   </head>
   <body>
@@ -40,4 +43,18 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
   </body>
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+  <script type="text/javascript">
+      $(document).ready(function(){
+        $('.menu-toggle').click(function(){
+            $('.menu-toggle').toggleClass('active')
+            $('nav').toggleClass('active')
+
+        })
+      })
+
+  </script>
 </html>

@@ -1,0 +1,95 @@
+header{
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 10px;
+    background: #8dfcf6;
+    border-radius: 10px;
+    box-shadow: 3px 10px 20px rgba($color: #000000, $alpha: 1.0);
+    .logo{
+        color: #fff;
+        height: 60px;
+        font-size: 36px;
+        line-height: 60px;
+        padding: 0 20px;
+        text-align: center;
+        box-sizing: border-box;
+        float:left;
+        font-weight: 700;
+        text-decoration: none;
+    }
+    nav{
+        float: right;
+        ul{
+            margin: 0;
+            padding: 0;
+            display: flex;
+            li{
+                list-style: none;
+                a{
+                    display: block;
+                    margin: 10px 0;
+                    padding: 10px 20px;
+                    text-decoration: none;
+                    color: #262626;
+                }
+                a:hover, a.active{
+                    background: #8cbdba;
+                    color: #fff;
+                    transition: 0.7s;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    .main{
+        clear:both;
+    }
+}
+@media (max-width: 1200px){
+    header{
+        margin: 30px;
+    }
+}
+@media (max-width: 768px){
+    .menu-toggle{
+        display: block;
+        width: 40px;
+        height: 40px;
+        margin: 10px;
+        float:right ;
+        cursor: pointer;
+        text-align: center;
+        font-size: 30px;
+        color: #ffffff; 
+    }
+    .menu-toggle::before{
+        content: '\f0c9';
+        font-family: fontAwesome;
+        line-height: 48px;
+        background-color:  #8cbdba;
+    }
+    .menu-toggle.active::before{
+        content: '\f00d';
+        font-family: fontAwesome;
+        line-height: 48px;
+        background-color:  #8cbdba;
+    }
+    nav{
+        display: none;
+    }
+    nav.active{
+        display: block;
+        width: 100%;
+        
+        ul{
+            display: block;
+
+            li a{
+                margin: 0;
+            }
+        }
+        
+    }
+}

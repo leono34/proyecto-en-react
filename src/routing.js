@@ -7,27 +7,29 @@ import {
 } from "react-router-dom";
 
 import {
-  UsersRoutes,
-  ProductRoutes
+  ClientRoutes,
+  EmployeesRoutes
 } from "./features"
 
 function MainRoutes(props) {
   return (
     <Switch>
-      <Route path="/login">
+      <Route exact path="/register">
+        <h1>Aca ira el register</h1>
+      </Route>
+      <Route exact path="/login">
         <h1>Login</h1>
       </Route>
-      <Route path="/products">
-        <ProductRoutes />
+      <Route path="/client" component={ClientRoutes}/>
+      <Route path="/admin">
+        admin
       </Route>
-      <Route path="/users">
-        <UsersRoutes />
-      </Route>
-      <Redirect
+      <Route path="/employee" component={EmployeesRoutes}/>
+      {/* <Redirect
         to={{
           pathname: "/login"
         }}
-      />
+      /> */}
     </Switch>
   )
 }

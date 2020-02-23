@@ -1,0 +1,41 @@
+@import "../../assets/styles/main";
+
+
+.footer {
+  color: $color-texd;
+  padding: 60px 0 40px;
+  background: $bg-navfoot;
+
+  ul {
+    display: flex;
+    justify-content: center;
+    margin: 0 0 40px 0;
+    li {
+      margin: 0 20px;
+      a {
+        color: $bg-white;
+        font-size: $font-size-bigger;
+        &:hover {
+          color: $bg-white;
+        }
+      }
+    }
+  }
+  .copyright {
+    text-align: center;
+    color: $bg-white;
+    font-family: $font-montserrat;
+    b {
+      font-family: $font-montserrat;
+    }
+  }
+}
+
+@media (max-width: $mq-mobile) {
+  .footer{
+    padding: 50px 0 25px;
+    ul{
+      margin: 0 0 20px 0;
+    }
+  }
+}

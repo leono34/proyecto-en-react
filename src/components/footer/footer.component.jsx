@@ -12,7 +12,7 @@ import {
 
 
 function Footer() {
-  const github = 'https://github.com/luicsistem/petwalker';
+  const github = '';
   const facebook = '';
   const instagram = '';
 

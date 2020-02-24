@@ -7,14 +7,18 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {
   faFacebook,
   faInstagram,
-  faGithub
+  faGithub,
+  faYoutube,
 } from '@fortawesome/free-brands-svg-icons';
+
+
 
 
 function Footer() {
   const github = 'https://github.com/luicsistem/petwalker';
   const facebook = '';
   const instagram = '';
+  const youtube = '';
 
   return (
     <footer className="footer">
@@ -33,19 +37,21 @@ function Footer() {
        
           </div>
 
-          <div className="footer-widget">
+          <div className="col-md-4">
             <h3 className="text-danger">Contact Info</h3>
             <div className="footer-contact-info-wrap">
-                <ul className="footer-contact-info-list">
+                <ul className="list-group">
                     <li>
-                        <i className="fa fa-map-marker-alt"></i>
-                        <span>Calle   Boston 220 Las Vegas </span>
+                        <span>
+                        Calle Boston 220 Las Vegas 
+                        </span>
                     </li>
                     <li>
                         <i className="fa fa-phone"></i>
-                        <span>51 - 123 456 78 9</span>
+                        <span>51-123 456 78 9</span>
                     </li>
                     <li>
+                        
                         <i className="fa fa-envelope"></i>
                         <span>petwalker@gmail.com</span>
                     </li>
@@ -56,12 +62,15 @@ function Footer() {
 
       </div>
 
+      <FontAwesomeIcon/>
+
 
       <div>
       <ul>
         <li><a href={facebook} target="_blank"><FontAwesomeIcon icon={faFacebook} /></a></li>
         <li><a href={instagram} target="_blank"><FontAwesomeIcon icon={faInstagram} /></a></li>
         <li><a href={github} target="_blank"><FontAwesomeIcon icon={faGithub} /></a></li>
+        <li><a href={youtube} target="_blank"><FontAwesomeIcon icon={faYoutube} /></a></li>
       </ul>
       <p className="copyright">Copyright 2020 | <b>Petwalker</b></p>
 

@@ -1,6 +1,6 @@
 import React from "react";
-
-class ProductCreate extends React.Component {
+import {Employees} from "../../"
+class Client extends React.Component {
   constructor(props) {
     super(props);
   }
@@ -8,12 +8,13 @@ class ProductCreate extends React.Component {
   render() {
     return (
       <div>
-        ProductCreate
+        <div>Mapa</div>
+        <Employees/>
       </div>
     )
   }
 }
 
 export {
-  ProductCreate
+  Client
 }

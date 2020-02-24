@@ -6,32 +6,26 @@ import {
 } from "react-router-dom";
 
 import {
-  UserList,
-  UserCreate,
-  UserEdit,
-  UserDetail
+  Employees,
+  EmployeesDetail
 } from "./components";
 
-function UsersRoutes() {
+function EmployeesRoutes(props) {
   let { path } = useRouteMatch();
   return (
     <Switch>
-      <Route exact path={`${path}`}>
-        <UserList />
-      </Route>
-      <Route path={`${path}/edit`}>
+      <Route exact path={`${path}`} component={Employees}/>
+      {/* <Route path={`${path}/edit`}>
         <UserEdit />
       </Route>
       <Route path={`${path}/create`}>
         <UserCreate />
-      </Route>
-      <Route path={`${path}/detail/:id`}>
-        <UserDetail />
-      </Route>
+      </Route> */}
+      <Route path={`${path}/:id`} component={EmployeesDetail}/>
     </Switch>
   )
 }
 
 export {
-  UsersRoutes
+  EmployeesRoutes
 }

@@ -6,20 +6,15 @@ import {
 } from "react-router-dom";
 
 import {
-  ProductList,
-  ProductCreate,
-  ProductEdit,
-  ProductDetail
+  Client
 } from "./components";
 
-function ProductRoutes() {
+function ClientRoutes() {
   let { path } = useRouteMatch();
   return (
     <Switch>
-      <Route exact path={`${path}`}>
-        <ProductList />
-      </Route>
-      <Route path={`${path}/edit`}>
+      <Route exact path={`${path}`} component={Client}/>
+      {/* <Route path={`${path}/edit`}>
         <ProductEdit />
       </Route>
       <Route path={`${path}/create`}>
@@ -27,11 +22,11 @@ function ProductRoutes() {
       </Route>
       <Route path={`${path}/detail/:id`}>
         <ProductDetail />
-      </Route>
+      </Route> */}
     </Switch>
   )
 }
 
 export {
-  ProductRoutes
+  ClientRoutes
 }

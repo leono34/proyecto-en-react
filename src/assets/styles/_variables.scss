@@ -1,3 +1,8 @@
+// color
+$colornegro:#000000;
+$colorblanco:#fff;
+$colorceleste:#91d5ff;
+
 /*--font---------------------------------------------------------------*/
 
 $font-stack:  'Helvetica Neue Light',  'Helvetica', ' sans-serif' ;
@@ -36,40 +41,6 @@ $bg-navfoot:#91d5ff;
 $bg-white:#fff;
 $bg-dark:#e8e8e8;
 
-
-// $color-branding: (
-//   scale0: #fff,
-//   scale1: #bfc3ba,
-//   scale2: #a9aca9,
-//   scale3: #60495a,
-//   scale4: #3f3244,
-//   scale5: #2f2235
-// );
-
-// $color-scale0: map-get($color-branding, scale0);
-// $color-scale1: map-get($color-branding, scale1);
-// $color-scale2: map-get($color-branding, scale2);
-// $color-scale3: map-get($color-branding, scale3);
-// $color-scale4: map-get($color-branding, scale4);
-// $color-scale5: map-get($color-branding, scale5);
-
-// $color-branding-transparent: (
-//   scale0: rgba(255, 255, 255, 0.6),
-//   scale1: rgba(191, 195, 186, 0.6),
-//   scale2: rgba(169, 172, 169, 0.6),
-//   scale3: rgba(96, 73, 90, 0.6),
-//   scale4: rgba(63, 50, 68, 0.6),
-//   scale5: rgba(47, 34, 53, 0.6)
-// );
-
-// $color-transparent0: map-get($color-branding-transparent, scale0);
-// $color-transparent1: map-get($color-branding-transparent, scale1);
-// $color-transparent2: map-get($color-branding-transparent, scale2);
-// $color-transparent3: map-get($color-branding-transparent, scale3);
-// $color-transparent4: map-get($color-branding-transparent, scale4);
-// $color-transparent5: map-get($color-branding-transparent, scale5);
-
-
 // color network--------------
 
 $color-networks: (
@@ -87,15 +58,6 @@ $color-twitter: #007ebf;
 $color-github: #000000 ;
 $color-linkedin: #1a2e88 ;
 $color-codepen: #000000 ;
-
-
-
-
-// $color-instagram: map-get($color-networks, instagram);
-// $color-twitter: map-get($color-networks, twitter);
-// $color-github: map-get($color-networks, github);
-// $color-linkedin: map-get($color-networks, linkedin);
-// $color-codepen: map-get($color-networks, codepen);
 
 /* layout
 ---------------------------------------------------------------*/

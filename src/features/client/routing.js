@@ -6,7 +6,8 @@ import {
 } from "react-router-dom";
 
 import {
-  Client
+  Client,
+  Dueño
 } from "./components";
 
 function ClientRoutes() {
@@ -14,6 +15,7 @@ function ClientRoutes() {
   return (
     <Switch>
       <Route exact path={`${path}`} component={Client}/>
+      <Route path={`${path}`} component={Dueño}/>
       {/* <Route path={`${path}/edit`}>
         <ProductEdit />
       </Route>
@@ -28,5 +30,6 @@ function ClientRoutes() {
 }
 
 export {
-  ClientRoutes
+  ClientRoutes,
+  Dueño
 }

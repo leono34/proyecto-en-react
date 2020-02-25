@@ -1,19 +1,26 @@
 .dueño{
     margin: 30px;
 
-.cuerpo{
-    border:2px solid $colornegro;
-    align-items: center;
-    text-align: center;
-
-    .img{
-        width: 20px;
-        height: 20px;
-        color: $colorceleste;
+    .separar{
+        padding: 10px;
     }
-}
+    .cuerpohe{
+        margin: 10px;
+        .cuerpo{
+            border:2px solid $colornegro;
+            align-items: center;
+            text-align: center;
+        
+            .img{
+                width: 20px;
+                height: 20px;
+                color: $colorceleste;
+            }
+        }
+    }
 .card{
     padding: 10px;
+    margin: 10px 10px 10px 60px;
     .card-invitacion{
         margin:20px;
         padding: 10px;

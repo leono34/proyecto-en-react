@@ -29,11 +29,14 @@
         border: 1px solid $colorceleste;
     }
   }
-.card-nuevo{
-  margin-top: 90px;
-  padding: 30px;
-  height: 90px;
-  border: 1px solid $colornegro;  
+.mediacard_clase{
+  margin-top: 30px;
+  margin-left: 60px;
+}
+.boton_nuevo{
+  margin-top: 170px;
+  margin-left: 60px;
+  align-items: center;
 }
 
 }

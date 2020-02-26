@@ -6,21 +6,21 @@ import {
 } from "react-router-dom";
 
 import {
-  Admin
+  Admin, Avatar, MediaCard
 } from "./components";
 
 function AdminRoutes(props) {
   let { path } = useRouteMatch();
   return (
     <Switch>
-      <Route exact path={`${path}`} component={Admin}/>
+      <Route exact path={`${path}`} component={MediaCard}/>
       {/* <Route path={`${path}/edit`}>
         <UserEdit />
       </Route>
       <Route path={`${path}/create`}>
         <UserCreate />
       </Route>
-      <Route path={`${path}/:id`} component={EmployeesDetail}/> */}
+      <Route path={`${path}/:id`} component={Avatar}/> */}
     </Switch>
   )
 }

@@ -1,15 +1,25 @@
-import React from "react";
-import {Employees} from "../../"
-class Client extends React.Component {
+import React, {Component} from "react";
+// import {Employees} from "../../";
+import {EmployeeGrid} from "../../";
+
+class Client extends Component {
   constructor(props) {
     super(props);
+    this.state = {
+      data: []
+  };
+    
   }
 
   render() {
     return (
       <div>
-        <div>Mapa</div>
-        <Employees/>
+       
+        <h1>aki construire mi mapita</h1>
+         {/* <Employees/>  */}
+         <EmployeeGrid/>  
+        
+        
       </div>
     )
   }

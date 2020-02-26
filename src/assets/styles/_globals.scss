@@ -5,3 +5,25 @@ html {
 * {
   box-sizing: border-box;
 }
+
+body {
+  font-size: 1.3rem;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+
+  .main {
+    flex-grow: 1;
+  }
+}
+
+a {
+  color: inherit;
+
+  &:hover {
+    text-decoration: none;
+  }
+}

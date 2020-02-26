@@ -1,7 +1,6 @@
 import React from "react";
 
-
-class hola extends React.Component{
+class Hola extends React.Component{
   render(){
     return(
       <div>
@@ -11,4 +10,7 @@ class hola extends React.Component{
   }
 }
 
-export default hola
+
+
+
+export default Hola 

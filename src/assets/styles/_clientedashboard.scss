@@ -1,30 +1,39 @@
 .dueño{
-    margin: 30px;
-
-    .separar{
-        padding: 10px;
-    }
+  padding: 30px;
     .cuerpohe{
-        margin: 10px;
+        padding: 10px;
+        margin-left:20px;
+        margin-right: 60px;
         .cuerpo{
-            border:2px solid $colornegro;
+            border-bottom: 2px solid $colornegro;
             align-items: center;
             text-align: center;
-        
-            .img{
-                width: 20px;
-                height: 20px;
-                color: $colorceleste;
+            .imagen{
+              width: 70px;
+              height: 70px;              
             }
         }
+        .nombre{
+          text-align: center;
+          color :$coloramarillo;
+          p{
+            margin-top: 30px;
+          }
+       }
     }
 .card{
-    padding: 10px;
-    margin: 10px 10px 10px 60px;
+    padding: 10px 10px 10px 30px;
     .card-invitacion{
         margin:20px;
         padding: 10px;
         border: 1px solid $colorceleste;
     }
+  }
+.card-nuevo{
+  margin-top: 90px;
+  padding: 30px;
+  height: 90px;
+  border: 1px solid $colornegro;  
 }
+
 }

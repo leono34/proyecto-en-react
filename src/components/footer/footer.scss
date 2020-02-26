@@ -46,13 +46,13 @@
 // }
 
 .footer {
-    background: black;
-    color: white;
+    background: #91d5ff;
+    color: #000000;
     padding: 20px 0;
 
     .block {
         padding: 10px;
-        background: #191919;
+        background: #91d5ff;
         border-radius: 8px;
         height: 100%;
     }
@@ -64,5 +64,6 @@
 
     p {
         margin: 0;
+        color: #000000
     }
 }

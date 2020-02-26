@@ -8,7 +8,8 @@ import {
 
 import {
   ClientRoutes,
-  EmployeesRoutes
+  EmployeesRoutes,
+  AdminRoutes
 } from "./features"
 
 function MainRoutes(props) {
@@ -21,9 +22,9 @@ function MainRoutes(props) {
         <h1>Login</h1>
       </Route>
       <Route path="/client" component={ClientRoutes}/>
-      <Route path="/admin">
-        admin
-      </Route>
+      
+      <Route path="/admin" component={AdminRoutes}/>
+
       <Route path="/employee" component={EmployeesRoutes}/>
       {/* <Redirect
         to={{

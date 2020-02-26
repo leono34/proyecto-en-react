@@ -1,0 +1,11 @@
+[33mcommit 8ac031f9ea03cd57f68149342049d7851d818436[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: unknown <paolo.minaya.c@gmail.com>
+Date:   Mon Feb 24 13:38:48 2020 -0500
+
+    cambios en css del footer
+
+[33mcommit a8f637511e282b32bd31f5181b6b669f2f0e95eb[m
+Author: unknown <paolo.minaya.c@gmail.com>
+Date:   Sat Feb 22 15:25:49 2020 -0500
+
+    la base del footer, falta el sass

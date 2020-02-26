@@ -3,6 +3,7 @@ p {
   font-family: $font-stack;
   margin: 0 0 10px 0;
   color: $color-texp;
+  line-height: 1.5;
 }
 
 b {
@@ -72,4 +73,9 @@ h6 {
 .bold {
   font-weight: $font-bolder;
   font-family: $font-montserrat;
+}
+
+p {
+  font-size: 1.3rem;
+  line-height: 1.8;
 }

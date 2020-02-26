@@ -1,7 +1,6 @@
 import React from "react";
 
-
-class hola extends React.Component{
+class Hola extends React.Component{
   render(){
     return(
       <div>
@@ -10,5 +9,16 @@ class hola extends React.Component{
     );
   }
 }
+class Boton extends React.Component{
+  render(){
+    return (
+      <div>
+          <button className="btn btn-warning">Invita a un amigo</button>
+      </div>
+    )
+  }
+}
 
-export default hola
+
+
+export default Boton 

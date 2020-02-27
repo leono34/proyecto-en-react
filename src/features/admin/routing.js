@@ -6,14 +6,14 @@ import {
 } from "react-router-dom";
 
 import {
-  Admin, Avatar, MediaCard
+  Admin, Avatar, MediaCard, Cards
 } from "./components";
 
 function AdminRoutes(props) {
   let { path } = useRouteMatch();
   return (
     <Switch>
-      <Route exact path={`${path}`} component={MediaCard}/>
+      <Route exact path={`${path}`} component={Cards}/>
       {/* <Route path={`${path}/edit`}>
         <UserEdit />
       </Route>

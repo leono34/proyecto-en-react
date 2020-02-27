@@ -24,7 +24,7 @@ class  MediaCard extends React.Component {
         <Card className="w-50 p-3" >
           <CardActionArea>
             <CardMedia
-              className="h-75"
+              className="h-50"
               image="./images/pelusa.jpg"
               title="Contemplative Reptile"
             />
@@ -51,6 +51,8 @@ class  MediaCard extends React.Component {
       }
     }
 
+
+    
 
 export {
   MediaCard

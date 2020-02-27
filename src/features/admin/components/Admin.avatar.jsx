@@ -1,6 +1,7 @@
 import React from "react";
 import Button from "@material-ui/core/Button";
 import {AvatarCircule} from "./Admin.card"
+import grafico from '../../../images/pelusa.jpg'
 
 import { Row, Col } from "react-bootstrap";
 
@@ -48,7 +49,7 @@ class Usuario extends React.Component {
       <div className="col-lg-4 p-8 text-center d-inline-block">
               < AvatarCircule />
               <h6 >PAOLO MINAYA</h6>
-            <hr />
+            <hr className="size:4px"/>
           <p><a className="btn btn-secondary" href="#" role="button">Editar Perfil </a></p>
       </div>
     );
@@ -73,3 +74,17 @@ class Crud extends React.Component {
 
 export { Crud };
 
+
+
+class Imagen extends React.Component {
+  render() {
+    return (
+      <div className="col-lg-4 p-5 text-center border border-dark">
+          <img src="{grafico}" alt="grafico"/>
+          <p><a className="btn btn-secondary" href="#" role="button">Detalle</a></p>
+      </div>
+    );
+  }
+}
+
+export { Imagen};

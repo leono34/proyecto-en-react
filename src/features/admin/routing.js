@@ -13,7 +13,7 @@ function AdminRoutes(props) {
   let { path } = useRouteMatch();
   return (
     <Switch>
-      <Route exact path={`${path}`} component={Crud}/>
+      <Route exact path={`${path}`} component={Admin}/>
       {/* <Route path={`${path}/edit`}>
         <UserEdit />
       </Route>

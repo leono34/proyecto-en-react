@@ -8,7 +8,7 @@ class Avatar extends React.Component {
         <div>
           <h1>PAOLO</h1>
         </div>
-
+      
         <Button variant="contained" color="bg-primary">
           EDITAR
         </Button>

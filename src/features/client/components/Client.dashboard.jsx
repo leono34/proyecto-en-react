@@ -7,6 +7,9 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
+import {Invita} from './Dueño.Component';
+import {BotonFormulario} from './Formulario.component';
+
 
 
 const useStyles = makeStyles({
@@ -74,14 +77,10 @@ class Dueño extends React.Component {
                 </div>
               </div>
               <div className="col-md-8 card">
-                <div className="card-invitacion">
-                  <h5>Recomienda a un amigo, Gana S/20</h5>
-                  <p>Por cada amigo que reserve su estadia ,le daremos un credito de S/20 para su proxima
-                        reserva. </p>
+                 <Invita/>
                   <Button size="small" color="secondary">
                     Invita a un amigo 
                   </Button>
-                </div>
               </div>
             </div>
           </div>
@@ -96,9 +95,7 @@ class Dueño extends React.Component {
                   <MediaCard/>
                 </div> 
                   <div  className="boton_nuevo">
-                 <Button size="large" color="secondary">
-                    Añadir Mascota 
-                  </Button>    
+                  <BotonFormulario></BotonFormulario>
                   </div>
                 </div>
               </div>
@@ -109,6 +106,15 @@ class Dueño extends React.Component {
     );
   }
 }
+
+
+
+
+
+
+
+
+
 
 export {
   Dueño

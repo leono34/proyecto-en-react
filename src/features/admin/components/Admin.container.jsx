@@ -1,4 +1,5 @@
 import React from "react";
+import UserAvatar from 'react-user-avatar'
 
 class Admin extends React.Component {
     constructor(props){
@@ -7,6 +8,9 @@ class Admin extends React.Component {
     render()  {
         return (
             <div>
+                
+
+
                 <div>
                      HOLA SOY EL Administrador 46 
                 </div>

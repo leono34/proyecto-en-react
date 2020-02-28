@@ -7,8 +7,7 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
-import Avatar from 'react-avatar';
-import UserAvatar from 'react-user-avatar'
+
 
 // const useStyles = makeStyles({
 //   root: {
@@ -19,39 +18,39 @@ import UserAvatar from 'react-user-avatar'
 //   },
 // });
 
-class  MediaCard extends React.Component {
+class MediaCard extends React.Component {
   // let classes = useStyles();
-    render() {
-      return (
-        <Card className="w-50 p-3" >
-          <CardActionArea>
-            <CardMedia
-              className="h-50"
-              image="./images/pelusa.jpg"
-              title="Contemplative Reptile"
-            />
-            <CardContent>
-              <Typography gutterBottom variant="h5" component="h2">
-                Lizard
+  render() {
+    return (
+      <Card className="w-50 p-3" >
+        <CardActionArea>
+          <CardMedia
+            className="h-50"
+            image="./images/pelusa.jpg"
+            title="Contemplative Reptile"
+          />
+          <CardContent>
+            <Typography gutterBottom variant="h5" component="h2">
+              Lizard
               </Typography>
-              <Typography variant="body2" color="textSecondary" component="p">
-                Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-                across all continents except Antarctica
+            <Typography variant="body2" color="textSecondary" component="p">
+              Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
+              across all continents except Antarctica
               </Typography>
-            </CardContent>
-          </CardActionArea>
-          <CardActions>
-            <Button size="small" color="primary">
-              Share
+          </CardContent>
+        </CardActionArea>
+        <CardActions>
+          <Button size="small" color="primary">
+            Share
             </Button>
-            <Button size="small" color="primary">
-              Learn More
+          <Button size="small" color="primary">
+            Learn More
             </Button>
-          </CardActions>
-        </Card>
-      );
-      }
-    }
+        </CardActions>
+      </Card>
+    );
+  }
+}
 
 export {
   MediaCard
@@ -59,66 +58,55 @@ export {
 
 
 class Formulario extends React.Component {
- 
+
   render() {
- 
+
     return (
- 
-        <form className="mb-5">
 
-          <div>
-            < UserAvatar size = " 48 "  name = " Will Binns-Smith " / > 
-          </div>
+      <form className="mb-5">
 
-          <div>
-            <Avatar name="Foo Bar" textSizeRatio="1.75" />
-          </div>
- 
-          <div className="form-group">
-            <label htmlFor="nya" className="negrita">Nombres y Apellidos</label>
-            <input type="text" className="form-control" id="nya" required />            
-          </div>
- 
-          <div className="form-group">
-            <label htmlFor="email" className="negrita">Email</label>
-            <input type="email" className="form-control" id="email" required />
-          </div>
- 
-          <div className="form-group">
-            <label htmlFor="asunto" className="negrita">Asunto</label>
-            <input type="text" className="form-control" id="asunto" required />
-          </div>
- 
-          <div className="form-group">
-            <label htmlFor="mensaje" className="negrita">Mensaje</label>
-            <textarea className="form-control" id="mensaje" required></textarea>
-          </div>
- 
-          <button type="submit" className="btn btn-primary">Enviar</button>
- 
-        </form>
- 
+        <div className="form-group">
+          <label htmlFor="nya" className="negrita">Nombres y Apellidos</label>
+          <input type="text" className="form-control" id="nya" required />
+        </div>
+
+        <div className="form-group">
+          <label htmlFor="email" className="negrita">Email</label>
+          <input type="email" className="form-control" id="email" required />
+        </div>
+
+        <div className="form-group">
+          <label htmlFor="asunto" className="negrita">Asunto</label>
+          <input type="text" className="form-control" id="asunto" required />
+        </div>
+
+        <div className="form-group">
+          <label htmlFor="mensaje" className="negrita">Mensaje</label>
+          <textarea className="form-control" id="mensaje" required></textarea>
+        </div>
+
+        <button type="submit" className="btn btn-primary">Enviar</button>
+
+      </form>
+
     )
-    
-  }
- 
-}
- 
-export {
- Formulario
-}
 
-
-class AvatarCircule extends React.Component {
-  render() {
-    return (
-      <div className="d-inline-block">
-        < UserAvatar className="col " size = " 45"  name = " Paolo Minaya " colors = { [ ' red ' , ' #91d5ff ' , ' green ' ] } / > 
-      </div> 
-    );
   }
+
 }
 
 export {
- AvatarCircule
+  Formulario
+}
+
+function Avatar(props){
+  return (
+    <img className="rounded-circle" width="100" height="100"
+      src={props.url}
+      alt={props.alt}/>
+  )
+}
+
+export {
+  Avatar
 }

@@ -6,7 +6,7 @@ import {
 } from "react-router-dom";
 
 import {
-  Admin, Boton, MediaCard, Cards,Formulario, AvatarCircule, Usuario, Crud
+  Admin, Boton, MediaCard, Cards,Formulario, Usuario, Crud,Avatar
 } from "./components";
 
 function AdminRoutes(props) {

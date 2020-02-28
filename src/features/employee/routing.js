@@ -7,14 +7,15 @@ import {
 
 import {
   Employees,
-  EmployeesDetail
+  EmployeesDetail,
+  EmployeeGrid
 } from "./components";
 
 function EmployeesRoutes(props) {
   let { path } = useRouteMatch();
   return (
     <Switch>
-      <Route exact path={`${path}`} component={Employees}/>
+      <Route exact path={`${path}`} component={EmployeeGrid}/>
       {/* <Route path={`${path}/edit`}>
         <UserEdit />
       </Route>

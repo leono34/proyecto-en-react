@@ -1,12 +1,14 @@
 .dog {
     border: 3px solid grey;
     border-radius: 10px;
-    font-size: 30px;
     text-align: center;
     height: 150px;
     margin: 40px;
     line-height:150px;
-    span{
+    .span{
+      font-size: 30px;
+      height: 150px;
+      line-height:150px;
         i {
         display: inline-block;
         vertical-align: middle;
@@ -34,8 +36,13 @@
     margin: 40px;
     line-height:150px;
     text-align: center;
+    .span{
+      line-height:150px;
+      font-size: 30px;
+      height: 150px;
+    }
   }
-  .cat span i {
+  .cat .span i {
     display: inline-block;
     vertical-align: middle;
     line-height: normal;
@@ -45,6 +52,8 @@
   }
   /* fin gato perro */
   /* inicio tabla */
+  
+
   .tabla{
       margin: 0px 40px 40px 40px;
       padding:20px ;
@@ -52,28 +61,13 @@
       border-radius: 5px;
       align-items: center;
   }
+  .span:hover{
+    color: rgb(102, 180, 50);
+  }
   .tabla:hover{
       border: 5px solid  rgb(102, 180, 50);
   }
-  .tabla #nombre:hover{
-      color: rgb(102, 180, 50);
-  }
-  .tabla #peso:hover{
-      color: rgb(102, 180, 50);
-  }
-  .tabla #tiporaza:hover{
-      color: rgb(102, 180, 50);
-  }
-  .tabla #añoenaños:hover{
-      color: rgb(102, 180, 50);
-  }
-  .tabla #añoenaños{
-      margin-right: 100px;
-    }
-  .tabla #añoenmeses:hover{
-      color: rgb(102, 180, 50);
-  }
-  .tabla #sexo:hover{
+  #nombre:hover{
       color: rgb(102, 180, 50);
   }
   /* final tabla */
@@ -82,17 +76,23 @@
       border: 3px solid grey;
       border-radius: 10px;
       text-align: center;
-      height: 70px;
       margin: 40px;
-      line-height:70px;
+      .span{
+        line-height:70px;
+        font-size: 30px;
+        height: 70px;
+      }
     }
   .cat1 {
       border: 3px solid grey;
       border-radius: 10px;
-      height: 70px;
       margin: 40px;
-      line-height:70px;
       text-align: center;
+      .span{
+        line-height:70px;
+        font-size: 30px;
+        height: 70px;
+      }
     }
   .textomascota{
       font-size: 30px;
@@ -103,18 +103,6 @@
   }
   .cat1:hover{
       border: 5px solid rgb(102, 180, 50);
-      color: rgb(102, 180, 50);
-  }
-  .textomascota:hover{
-      color: rgb(102, 180, 50);
-  }
-  .vetmascota:hover{
-      color: rgb(102, 180, 50);
-  }
-  .inmascota:hover{
-      color: rgb(102, 180, 50);
-  }
-  .cuimascota:hover{
       color: rgb(102, 180, 50);
   }
   .boton{

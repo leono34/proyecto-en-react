@@ -11,6 +11,15 @@ body {
   font-size: 1.1rem;
   color: #989898; 
  
+}video{
+  position:relative;
+  min-width: 100%;
+  min-height: 1300px;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: -1;
+
 }
 
 ::-moz-selection {

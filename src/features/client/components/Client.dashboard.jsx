@@ -1,57 +1,31 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import Card from '@material-ui/core/Card';
-import CardActionArea from '@material-ui/core/CardActionArea';
-import CardActions from '@material-ui/core/CardActions';
-import CardContent from '@material-ui/core/CardContent';
-import CardMedia from '@material-ui/core/CardMedia';
-import Button from '@material-ui/core/Button';
-import Typography from '@material-ui/core/Typography';
+import { Button } from 'react-bootstrap';
+import {Card} from 'react-bootstrap';
 import {Invita} from './Dueño.Component';
+import {Parrafo} from './Dueño.Component';
 import {BotonFormulario} from './Formulario.component';
 
-
-
-const useStyles = makeStyles({
-  root: {
-    maxWidth: 270,
-  },
-  media: {
-    height: 170,
-  },
-});
-
-function MediaCard() {
-  const classes = useStyles();
-  return (
-    <Card className={classes.root}>
-      <CardActionArea>
-        <CardMedia
-          className={classes.media}
-          image="/static/images/cards/contemplative-reptile.jpg"
-          title="Contemplative Reptile"
-        />
-        <CardContent>
-          <Typography gutterBottom variant="h4" component="h2">
-            Chocolate
-          </Typography>
-          <Typography variant="body2" color="textSecondary" component="p">
-            Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-            across all continents except Antarctica
-          </Typography>
-        </CardContent>
-      </CardActionArea>
-      <CardActions>
-        <Button size="large" color="primary">
-          Editar
-        </Button>
-        <Button size="large" color="primary">
-          Eliminar
-        </Button>
-      </CardActions>
-    </Card>
-  );
+class Dueñocard extends React.Component {
+  render(){
+    return(
+    <div>
+        <Card style={{ width: '25rem',height:'25rem' }}>
+          <Card.Body>
+            <Card.Title>Card Title</Card.Title>
+            <Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle>
+            <Card.Text>
+              Some quick example text to build on the card title and make up the bulk of
+              the card's content.
+            </Card.Text>
+            <Card.Link href="#"><Button variant="light">Card Link</Button></Card.Link>
+            <Card.Link href="#"><Button variant="light">Another Link</Button></Card.Link>
+          </Card.Body>
+        </Card>
+    </div>
+    );
+  }
 }
+
 
 
 class Dueño extends React.Component {
@@ -69,18 +43,21 @@ class Dueño extends React.Component {
                   <div className="col-md-12 cuerpo">
                     <input className="imagen" type="button" />
                     <img src="" alt="" />
-                    <p>Nombre del Dueño </p>
+                    <Parrafo 
+                    text='Nombre del Dueño'></Parrafo>
                   </div>
                   <div className="col-md-12 nombre">
-                    <p> Edita tu Perfil </p>
+                  <Parrafo 
+                    text='Edita tu Perfil'></Parrafo>
                   </div>
                 </div>
               </div>
               <div className="col-md-8 card">
-                 <Invita/>
-                  <Button size="small" color="secondary">
-                    Invita a un amigo 
-                  </Button>
+                 <Invita
+                    text='Recomienda a un amigo, Gana S/20'
+                    text1='Por cada amigo que reserve su estadia ,le daremos un credito de S/20 para su proxima
+                     reserva.'/>
+                     <Button variant="danger" >Invita a un amigo</Button>
               </div>
             </div>
           </div>
@@ -92,7 +69,7 @@ class Dueño extends React.Component {
               <div className="col-md-8">
                 <div className="row">
                   <div className="mediacard_clase">
-                  <MediaCard/>
+                  <Dueñocard/>
                 </div> 
                   <div  className="boton_nuevo">
                   <BotonFormulario></BotonFormulario>

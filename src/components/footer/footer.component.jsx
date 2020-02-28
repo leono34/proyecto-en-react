@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import "./footer.scss";
-
+import {  faPhone, faStar } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebook,
@@ -98,7 +98,8 @@ function Footer() {
                 </li>
                 <li>
                   <i className="fa fa-phone"></i>
-                  <p>51-123 456 78 9</p>
+                  
+                  <p> <FontAwesomeIcon icon={faPhone} /> 51-123 456 78 9</p>
                 </li>
                 <li>
                   <i className="fa fa-envelope"></i>

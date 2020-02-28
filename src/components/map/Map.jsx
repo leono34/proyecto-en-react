@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import L from 'leaflet';
+// import L from 'leaflet';
 import './map.scss'
 // import 'leaflet/dist/leaflet.css';
-import { Map, TileLayer, Marker, MapControl, Popup, ZoomControl, withLeaflet } from "react-leaflet";
+import { Map, TileLayer, Marker,  Popup} from "react-leaflet";
 
 type State = {
   lat: number,

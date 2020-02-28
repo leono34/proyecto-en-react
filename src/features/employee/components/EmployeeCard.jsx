@@ -1,6 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faThumbsUp, faCheckSquare, faPhone, faStar } from '@fortawesome/free-solid-svg-icons';
+import { faThumbsUp, faCheckSquare,  faStar } from '@fortawesome/free-solid-svg-icons';
 
 
 const EmployeeCard = ({ nombre, direccion, title, descripcion, rating, foto }) => {

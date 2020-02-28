@@ -9,7 +9,8 @@ import {
 import {
   ClientRoutes,
   EmployeesRoutes,
-  AdminRoutes
+  AdminRoutes,
+  LoginRoutes,
 } from "./features"
 
 function MainRoutes(props) {
@@ -18,8 +19,7 @@ function MainRoutes(props) {
       <Route exact path="/register">
         <h1>Aca ira el register</h1>
       </Route>
-      <Route exact path="/login">
-        <h1>Login</h1>
+      <Route exact path="/login" component={LoginRoutes}>
       </Route>
       <Route path="/client" component={ClientRoutes}/>
       

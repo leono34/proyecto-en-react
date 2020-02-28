@@ -1,6 +1,7 @@
 import React from "react";
 import Button from "@material-ui/core/Button";
 import grafico from '../../../images/pelusa.jpg'
+import {Avatar} from "./Admin.card"
 
 import { Row, Col } from "react-bootstrap";
 
@@ -45,7 +46,7 @@ export { Cards };
 function Usuario(props) {
     return (
       <div className="col-lg-4 p-8 text-center d-inline-block">
-        
+        <Avatar url={props.src} alt={props.alt}/>
         <h6> {props.name} </h6>
         <hr className="size:4px" />
         <p><a className="btn btn-secondary" href="#" role="button">Editar Perfil </a></p>
@@ -73,15 +74,17 @@ export { Crud };
 
 
 
-class Imagen extends React.Component {
-  render() {
+function Imagen (props) {
     return (
-      <div className="col-lg-4 p-5 text-center border border-dark">
-        <img src={grafico} alt="grafico" />
-        <p><a className="btn btn-secondary" href="#" role="button">Detalle</a></p>
+      <div className="col-  text-center border border-dark">
+        <h2> {props.titulo}</h2>
+        <img src={props.src} alt="grafico" width="200" height="150"/>
+        <div style={{padding:"12px"}}>
+          <p><a className="btn btn-secondary" href="" role="button">Detalles &raquo;</a></p>
+        </div>
       </div>
     );
-  }
+  
 }
 
 export { Imagen };

@@ -1,4 +1,5 @@
 import React from "react";
+import "./login.css";
 
 
 class Login extends React.Component {
@@ -15,7 +16,7 @@ class Login extends React.Component {
                             type="radio"
                             id="tab-1"
                             name="tab"
-                            className="sign-i"
+                            className="sign-in"
                             checked
                         />
                         <label htmlFor="tab-1" className="tab">
@@ -45,7 +46,7 @@ class Login extends React.Component {
                                     />
                                 </div>
                                 <div className="group">
-                                    <input id="check" type="checkbox" class="check" checked />
+                                    <input id="check" type="checkbox" class="check" />
                                     <label htmlFor="check">
                                         <span class="icon"></span> Keep me Signed in
                 </label>

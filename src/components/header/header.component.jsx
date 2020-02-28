@@ -3,7 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import { NavMain } from "../";
 import { Link } from "react-router-dom";
 
-import { addJump } from "../prueba/jump";
+// import { addJump } from "../prueba/jump";
 
 import "./header.scss";
 

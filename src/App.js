@@ -6,6 +6,7 @@ import {
 import {
   Header,
   Main,
+  MapExample,
   Footer
 } from "./components";
 
@@ -19,6 +20,8 @@ function App() {
         <Main>
           <MainRoutes />
         </Main>
+        
+       
         <Footer />
       </Router>
     </div>

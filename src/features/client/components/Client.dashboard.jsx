@@ -72,7 +72,6 @@ class Dueño extends React.Component {
                   <Dueñocard/>
                 </div> 
                   <div  className="boton_nuevo">
-                  <BotonFormulario></BotonFormulario>
                   </div>
                 </div>
               </div>

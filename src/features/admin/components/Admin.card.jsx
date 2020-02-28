@@ -101,7 +101,7 @@ export {
 
 function Avatar(props){
   return (
-    <img className="rounded-circle" width="100" height="100"
+    <img className="rounded-circle" width="80" height="80"
       src={props.url}
       alt={props.alt}/>
   )

@@ -1,9 +1,13 @@
 import React from 'react';
 import { Button } from 'react-bootstrap';
 import {Card} from 'react-bootstrap';
-import {Invita} from './Dueño.Component';
-import {Parrafo} from './Dueño.Component';
+import {
+  Invita, Parrafo
+ } from './Dueño.Component';
 import {BotonFormulario} from './Formulario.component';
+import {
+  Usuario, Cards, Avatar
+} from '../../admin/components';
 
 class Dueñocard extends React.Component {
   render(){
@@ -34,33 +38,28 @@ class Dueño extends React.Component {
   }
   render() {
     return (
-      <div className="dueño">
+      <div>
         <div className="row">
-          <div className="col-md-12">
-            <div className="row separar">
-              <div className="col-md-3 cuerpohe">
+              <div className="col-md-4">
                 <div className="row">
-                  <div className="col-md-12 cuerpo">
-                    <input className="imagen" type="button" />
-                    <img src="" alt="" />
-                    <Parrafo 
-                    text='Nombre del Dueño'></Parrafo>
-                  </div>
-                  <div className="col-md-12 nombre">
-                  <Parrafo 
-                    text='Edita tu Perfil'></Parrafo>
+                  <div className="col-md-12 avatar-clie">
+                    <Avatar src="../../../images/pelus.jpg"></Avatar>
+                    <hr/>
+                    <Usuario name="leon"/>
                   </div>
                 </div>
               </div>
-              <div className="col-md-8 card">
-                 <Invita
+              <div className="col-md-7">
+                <div className="row">
+                  <div className="col-md-7 carta-clie">
+                    <Invita
                     text='Recomienda a un amigo, Gana S/20'
                     text1='Por cada amigo que reserve su estadia ,le daremos un credito de S/20 para su proxima
                      reserva.'/>
                      <Button variant="danger" >Invita a un amigo</Button>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
         </div>
         <div className="row">
           <div className="col-md-12">
@@ -68,10 +67,10 @@ class Dueño extends React.Component {
               <div className="col-md-3"></div>
               <div className="col-md-8">
                 <div className="row">
-                  <div className="mediacard_clase">
+                  <div className="Dueñocard">
                   <Dueñocard/>
                 </div> 
-                  <div  className="boton_nuevo">
+                  <div  className="">
                   </div>
                 </div>
               </div>

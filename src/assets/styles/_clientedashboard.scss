@@ -1,42 +1,11 @@
-.dueño{
-  padding: 30px;
-    .cuerpohe{
-        padding: 10px;
-        margin-left:20px;
-        margin-right: 60px;
-        .cuerpo{
-            border-bottom: 2px solid $colornegro;
-            align-items: center;
-            text-align: center;
-            .imagen{
-              width: 70px;
-              height: 70px;              
-            }
-        }
-        .nombre{
-          text-align: center;
-          color :$coloramarillo;
-          p{
-            margin-top: 30px;
-          }
-       }
-    }
-.card{
-    padding: 10px 10px 10px 30px;
-    .card-invitacion{
-        margin:20px;
-        padding: 10px;
-        border: 1px solid $colorceleste;
-    }
-  }
-.mediacard_clase{
-  margin-top: 30px;
-  margin-left: 60px;
-}
-.boton_nuevo{
-  margin-top: 170px;
-  margin-left: 60px;
+.avatar-clie{
   align-items: center;
+  text-align: center;
+  border: 1px solid grey;
+  padding: 20px;
 }
-
+.carta-clie{
+  border: 1px solid grey;
+  padding: 20px;
+  margin-left: 90px;
 }

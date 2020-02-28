@@ -27,3 +27,4 @@ class Parrafo extends React.Component{
       return <label for="comment">{this.props.text}</label>;
     }
   }
+  export{Label}

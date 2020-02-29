@@ -80,15 +80,6 @@ class Dueño extends React.Component {
   }
 }
 
-
-
-
-
-
-
-
-
-
 export {
   Dueño
 }

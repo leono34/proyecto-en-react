@@ -12,7 +12,7 @@ class Invita extends React.Component {
     }
   }
   
-  export { Invita };
+export { Invita };
 
 class Parrafo extends React.Component{
   render(){
@@ -22,9 +22,9 @@ class Parrafo extends React.Component{
 
   export{ Parrafo }
 
-  class Label extends React.Component{
-    render(){
-      return <label for="comment">{this.props.text}</label>;
-    }
+class Label extends React.Component{
+  render(){
+     return <label for="comment">{this.props.text}</label>;
   }
-  export{Label}
+ }
+ export{Label}

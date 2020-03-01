@@ -1,22 +1,18 @@
-  /* fin gato perro */
-  /* inicio tabla */
-  
-
   .tabla{
-      margin: 0px 40px 40px 40px;
+      margin: 40px 40px 40px 40px;
       padding:20px ;
       border: 3px solid grey;
       border-radius: 5px;
       align-items: center;
   }
   .span:hover{
-    color: rgb(102, 180, 50);
+    color: rgb(145, 213, 255);
   }
   .tabla:hover{
-      border: 5px solid  rgb(102, 180, 50);
+      border: 5px solid  rgb(145, 213, 255);
   }
   #nombre:hover{
-      color: rgb(102, 180, 50);
+      color: rgb(145, 213, 255);
   }
   /* final tabla */
   /* inicio version */
@@ -46,10 +42,10 @@
       font-size: 30px;
   }
   .dog1:hover{
-      border: 5px solid rgb(102, 180, 50);
-      color: rgb(102, 180, 50);
+      border: 5px solid rgb(145, 213, 255);
+      color: rgb(145, 213, 255);
   }
   .cat1:hover{
-      border: 5px solid rgb(102, 180, 50);
-      color: rgb(102, 180, 50);
+      border: 5px solid rgb(145, 213, 255);
+      color: rgb(145, 213, 255);
   }

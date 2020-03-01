@@ -1,56 +1,6 @@
 import React from 'react';
 import { Button } from 'react-bootstrap';
 import {Parrafo} from './Dueño.Component';
-import { Form } from 'react-bootstrap';
-class Popup extends React.Component {
-    render() {
-      return (
-        <div>
-          <Formascota />
-          <Button
-            type="submit"
-            size="small"
-            variant="info"
-            onClick={this.props.closePopup}
-          >
-            Cerrar
-          </Button>
-        </div>
-    );
-  }
-}
-class BotonFormulario extends React.Component {
-  constructor() {
-    super();
-    this.state = {
-      showPopup: false
-    };
-  }
-  togglePopup() {
-    this.setState({
-      showPopup: !this.state.showPopup
-    });
-  }
-  render() {
-    return (
-      <div>
-        <Button
-          size="small"
-          color="primary"
-          onClick={this.togglePopup.bind(this)}
-        >
-          {" "}
-          Añadir Mascota
-        </Button>
-        {this.state.showPopup ? (
-          <Popup closePopup={this.togglePopup.bind(this)} />
-        ) : null}
-      </div>
-    );
-  }
-}
-export { BotonFormulario };
-
 
 class Formascota extends React.Component {
   constructor(props) {
@@ -78,29 +28,28 @@ class Formascota extends React.Component {
       [event.target.name]: event.target.value
     });
   }
+  // handleSubmit(event) {
+  //   event.preventDefault();
+  //   console.log("state", this.state)
+  //   // fetch("http://localhost:3000/users", {
+  //   //   method: "POST",
+  //   //   body: JSON.stringify(this.state),
+  //   //   headers: {
+  //   //     "Content-type": "application/json; charset=UTF-8"
+  //   //   }
+  //   // })
+  //   //   .then(response => response.json())
+  //   //   .then(json => {
+  //   //     this.setState({
+  //   //       users: [...this.state.users, json]
+  //   //     });
+  //   //     console.log(json);
+  //   //   });
+  // }
   handleSubmit(event) {
     event.preventDefault();
-    fetch("http://localhost:3000/users", {
-      method: "POST",
-      body: JSON.stringify(this.state),
-      headers: {
-        "Content-type": "application/json; charset=UTF-8"
-      }
-    })
-      .then(response => response.json())
-      .then(json => {
-        this.setState({
-          users: [...this.state.users, json]
-        });
-        console.log(json);
-      });
+    console.log('Your favorite flavor is: ' + this.state);
   }
-  handleSubmit(event) {
-    alert('Your favorite flavor is: ' + this.state.value);
-    event.preventDefault();
-  }
-  
-
   componentDidMount() {
     fetch("http://localhost:3000/users")
       .then(response => response.json())
@@ -111,14 +60,8 @@ class Formascota extends React.Component {
       });
   }
   render() {
-    let { users } = this.state;
-
-    let usersList = users
-      ? users.map(user => <Cardmascota key={user.id} {...user} />)
-      : "";
-
     return (
-      <div>
+      <form onSubmit={this.handleSubmit}>
         <div className="row">
           <div className="col-md-12 text">
             <div className="row">
@@ -282,9 +225,10 @@ class Formascota extends React.Component {
                           <div className="col-md-4" id="nombre">
                             <div className="form-group">
                               <label for="comment">
-                                Nombre de la veterinaria e información de
+                                Nombre de la veterinaria e info de
                                 contacto :
                               </label>
+                              <hr/>
                               <textarea
                                 value={this.state.infovet}
                                 onChange={this.handleChange}
@@ -300,6 +244,7 @@ class Formascota extends React.Component {
                               <label for="comment">
                                 Informacion sobre tu mascota :
                               </label>
+                              <hr/>
                               <textarea
                                 className="form-control"
                                 value={this.state.infomasc}
@@ -315,6 +260,7 @@ class Formascota extends React.Component {
                               <label for="comment">
                                 Cuidados sobre tu mascota :
                               </label>
+                              <hr/>
                               <textarea
                                 className="form-control"
                                 value={this.state.cuimasc}
@@ -335,21 +281,12 @@ class Formascota extends React.Component {
                             </div>
                           </div>
                           <div className="row">
-                            <div className="col" onSubmit={this.handleSubmit}>
+                          <div className="col" >
                               <Button
                                 type="submit"
                                 value="submit"
-                                variant="primary"
-                              >
+                                variant="primary">
                                 Agregar
-                              </Button>
-                            </div>
-                            <div className="col">
-                              <Button
-                                variant="secondary"
-                                onChange={this.handleChange}
-                              >
-                                Cancelar
                               </Button>
                             </div>
                           </div>
@@ -363,7 +300,7 @@ class Formascota extends React.Component {
             </div>
           </div>
         </div>
-      </div>
+      </form>
     );
   }
 }

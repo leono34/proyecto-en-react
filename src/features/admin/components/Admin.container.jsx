@@ -1,7 +1,6 @@
 import React from "react";
-import UserAvatar from 'react-user-avatar'
-import {Usuario, Crud, Cards, Imagen} from "./Admin.avatar"
-import {MediaCard, Avatar} from "./Admin.card"
+import {Crud, Imagen} from "./Admin.avatar"
+import {Avatar} from "./Admin.card"
 import { Row, Col } from "react-bootstrap";
 
 class Admin extends React.Component {
@@ -11,10 +10,10 @@ class Admin extends React.Component {
     render()  {
         return (
             <div>
-                <div className="d-flex justify-content-around">
-                    <Usuario name="Jorge" src="https://cdni.rt.com/actualidad/public_images/2019.12/article/5e0111c959bf5b655e45ba2d.JPG" alt="perros" />
+                <Row className="d-flex justify-content-around">
+                    <Avatar nombre="Jorge" url="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQfArWrKYvA1ZoH3xIbo5dxDuqPu2ybUnxbpd7PxsbcC4zVcx4c" />
                     <Crud />
-                </div>
+                </Row>
                 <Row className=" d-flex justify-content-around py-5 ">
                     <Col>
                       <Imagen titulo="Gráfico Ventas" src="https://image.freepik.com/psd-gratis/ventas-plantilla-diseno-grafico_348-292935650.jpg"/>

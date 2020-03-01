@@ -3,18 +3,18 @@ import { Container, Row, Col } from "react-bootstrap";
 import "./footer.scss";
 import {  faPhone, faEnvelope, faGlobe } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faFacebook,
-  faInstagram,
-  faGithub,
-  faYoutube,
+// import {
+//   faFacebook,
+//   faInstagram,
+//   faGithub,
+//   faYoutube,
 
-} from "@fortawesome/free-brands-svg-icons";
+// } from "@fortawesome/free-brands-svg-icons";
 
 function Footer() {
-  const github = "https://github.com/leono34/proyecto-en-react.git";
-  const facebook = "";
-  const instagram = "";
+  // const github = "https://github.com/leono34/proyecto-en-react.git";
+  // const facebook = "";
+  // const instagram = "";
   let fecha = new Date();
   let ano = fecha.getFullYear();
   return (

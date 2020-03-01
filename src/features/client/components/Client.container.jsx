@@ -14,8 +14,6 @@ class Client extends Component {
   render() {
     return (
       <div>
-       
-        <h1>aki construire mi mapita</h1>
          {/* <Employees/>  */}
          <EmployeeGrid/>  
         

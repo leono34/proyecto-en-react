@@ -1,9 +1,9 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faThumbsUp, faCheckSquare,  faStar } from '@fortawesome/free-solid-svg-icons';
+import { faStar } from '@fortawesome/free-solid-svg-icons';
 
 
-const EmployeeCard = ({ nombre, direccion, title, descripcion, rating, foto }) => {
+const EmployeeCard = ({ nombre, direccion, titulo, descripcion, rating, foto }) => {
   return (
     <div className="walkers d-flex shadow pt-3 " data-index="0">
       <div className="profile_picture p-3  ">
@@ -11,7 +11,7 @@ const EmployeeCard = ({ nombre, direccion, title, descripcion, rating, foto }) =
           <span className="name d-flex justify-content-center ">{nombre}</span></a> </div>
       <div className="content">
         <h3 className="card-title">
-          <a href="{}"> {title}</a>
+          <a href="{}"> {titulo}</a>
         </h3>
         <p className="card-text"> {descripcion}</p>
         <div className="pull-left">

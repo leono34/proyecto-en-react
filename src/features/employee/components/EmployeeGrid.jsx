@@ -13,7 +13,7 @@ class EmployeeGrid extends Component {
   }
 
   componentDidMount() {
-    axios.get('http://my-json-server.typicode.com/luicsistem/json-db/paseadores')
+    axios.get('http://127.0.0.1:8000/serviciosrest/servicioscliente/')
       .then(resp => {
         this.setState({
           employee: resp.data

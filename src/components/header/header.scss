@@ -1,38 +1,53 @@
- @import "../../assets/styles/main";
+//  @import "../../assets/styles/main";
 
-header {
-  width: 100%;
-  // color: $color-text;
-  // z-index: 9;
-  // position: absolute;
-  // transition: all 0.7s ease;
-  // &.header-background {
-  //   position: fixed;
-  //   background: $color-text;
-  //   transition: all 0.7s ease;
-  // }
-  .inside-container {
-    padding: 40px 40px 30px;
-    display: flex;
-    justify-content: space-between;
-    .header-logo {
-      color: $color-text;
-      font-family: $font-montserrat;
-      font-size: $font-size-big;
-      font-weight: $font-bold;
-    }
-    .header-nav {
-      display: flex;
-      li {
-        color: $color-text;
-        padding: 5px 20px;
-        font-family: $font-stack;
-        font-size: $font-size-little;
-        &:hover {
-          color: $color-text;
-          cursor: pointer;
-        }
-      }
+// .header {
+//   width: 100%;
+//   // color: $color-text;
+//   // z-index: 9;
+//   // position: absolute;
+//   // transition: all 0.7s ease;
+//   // &.header-background {
+//   //   position: fixed;
+//   //   background: $color-text;
+//   //   transition: all 0.7s ease;
+//   // }
+//   .inside-container {
+//     padding: 40px 40px 30px;
+//     display: flex;
+//     justify-content: space-between;
+//     .header-logo {
+//       color: $color-text;
+//       font-family: $font-montserrat;
+//       font-size: $font-size-big;
+//       font-weight: $font-bold;
+//     }
+//     .header-nav {
+//       display: flex;
+//       li {
+//         color: $color-text;
+//         padding: 5px 20px;
+//         font-family: $font-stack;
+//         font-size: $font-size-little;
+//         &:hover {
+//           color: $color-text;
+//           cursor: pointer;
+//         }
+//       }
+//     }
+//   }
+// }
+
+.header {
+  background: #91d5ff;
+  height: 120px;
+  color: #000;
+
+  &__logo {
+    font-size: 24px;
+    color: white;
+
+    &:hover {
+      
     }
   }
 }

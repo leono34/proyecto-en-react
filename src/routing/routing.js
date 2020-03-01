@@ -1,6 +1,5 @@
 import React from "react";
 import {
-  HashRouter as Router,
   Switch,
   Route,
   Redirect
@@ -11,21 +10,26 @@ import {
   EmployeesRoutes,
   AdminRoutes,
   LoginRoutes,
-  RegisterRoutes,
-} from "./features"
+} from "../features";
+
+import {
+  PrivateRoute
+} from "./private-routing";
 
 function MainRoutes(props) {
   return (
     <Switch>
-      <Route exact path="/register" component={RegisterRoutes}>
-      </Route>
       <Route exact path="/login" component={LoginRoutes}>
       </Route>
-      <Route path="/client" component={ClientRoutes}/>
-      
-      <Route path="/admin" component={AdminRoutes}/>
-
-      <Route path="/employee" component={EmployeesRoutes}/>
+      <PrivateRoute path="/client">
+        <ClientRoutes/>
+      </PrivateRoute>
+      <PrivateRoute path="/admin">
+        <AdminRoutes/>
+      </PrivateRoute>
+      <PrivateRoute path="/employee">
+        <EmployeesRoutes/> 
+      </PrivateRoute>
       {/* <Redirect
         to={{
           pathname: "/login"

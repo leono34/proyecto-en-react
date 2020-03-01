@@ -2,13 +2,11 @@ import React from 'react';
 import { Button } from 'react-bootstrap';
 import {Card} from 'react-bootstrap';
 import {
-  Invita, Parrafo
+  Invita
  } from './Dueño.Component';
+import {Formascota, BotonFormulario} from './Formulario.component';
 import {
-  BotonFormulario, Formularioto
-} from './Formulario.component';
-import {
-  Usuario, Cards, Avatar
+  Usuario
 } from '../../admin/components';
 
 class Dueñocard extends React.Component {
@@ -23,16 +21,14 @@ class Dueñocard extends React.Component {
               Some quick example text to build on the card title and make up the bulk of
               the card's content.
             </Card.Text>
-            <Card.Link href="#"><Button variant="light">Card Link</Button></Card.Link>
-            <Card.Link href="#"><Button variant="light">Another Link</Button></Card.Link>
+            <Card.Link href="#"><Button variant="success">Card Link</Button></Card.Link>
+            <Card.Link href="#"><Button variant="success">Another Link</Button></Card.Link>
           </Card.Body>
         </Card>
     </div>
     );
   }
 }
-
-
 
 class Dueño extends React.Component {
   constructor(props) {
@@ -45,8 +41,6 @@ class Dueño extends React.Component {
               <div className="col-md-4">
                 <div className="row">
                   <div className="col-md-12 avatar-clie">
-                    <Avatar src="../../../images/pelus.jpg"></Avatar>
-                    <hr/>
                     <Usuario name="leon"/>
                   </div>
                 </div>
@@ -67,18 +61,23 @@ class Dueño extends React.Component {
           <div className="col-md-12">
             <div className="row">
               <div className="col-md-3"></div>
-              <div className="col-md-8">
+              <div className="col-md-4">
                 <div className="row">
-                  <div className="Dueñocard">
-                  <Dueñocard/>
-                </div> 
-                  <div  className="">
-                    <Formularioto></Formularioto>
-                  </div>
+                    <div className="Dueñocard">
+                    <Dueñocard/>
+                  </div> 
+                </div>
+              </div>
+              <div className="col-md-4">
+                <div className="row">
+                    <div className="botonam">
+                      <BotonFormulario> Añadir Mascota</BotonFormulario>
+                    </div>
                 </div>
               </div>
             </div>
           </div>
+{/* aqui iria el Formascota */}
         </div>
       </div>
     );

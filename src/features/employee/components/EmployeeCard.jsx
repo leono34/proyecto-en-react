@@ -3,9 +3,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
 
 
-const EmployeeCard = ({ nombre, direccion, titulo, descripcion, rating, foto }) => {
+const EmployeeCard = ({ nombre, direccion, titulo, descripcion, rating, foto, onClick }) => {
   return (
-    <div className="walkers d-flex shadow pt-3 " data-index="0">
+    <div onClick={onClick} className="walkers d-flex shadow pt-3 " data-index="0">
       <div className="profile_picture p-3  ">
         <a href="//#endregio" ><img alt="woman" className="rounded-circle" width="90" height="90" src={foto} />
           <span className="name d-flex justify-content-center ">{nombre}</span></a> </div>
@@ -20,12 +20,12 @@ const EmployeeCard = ({ nombre, direccion, titulo, descripcion, rating, foto }) 
               <i className="fa fa-comment-o"></i>
             </strong>
               <strong>{rating}</strong>&nbsp;
-            
+
                         <span className="stars  text-warning " rel="tooltip" data-original-title="Valoración media">
-                        <FontAwesomeIcon icon={faStar} />
-                        <FontAwesomeIcon icon={faStar} />
-                        <FontAwesomeIcon icon={faStar} />
-                        <FontAwesomeIcon icon={faStar} />
+                <FontAwesomeIcon icon={faStar} />
+                <FontAwesomeIcon icon={faStar} />
+                <FontAwesomeIcon icon={faStar} />
+                <FontAwesomeIcon icon={faStar} />
 
               </span>
             </a></p>

@@ -6,7 +6,6 @@ import {
 import {
   Header,
   Main,
-  MapExample,
   Footer
 } from "./components";
 

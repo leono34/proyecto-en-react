@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { withRouter } from "react-router";
+import { Link } from "react-router-dom";
 import { NavMain } from "../";
 import "./header.scss";
 class inHeader extends React.Component {
@@ -27,9 +28,9 @@ class inHeader extends React.Component {
         <Container>
           <Row>
             <Col>
-              <a className="header__logo" href="">
+              <Link className="header__logo" to="/">
                 PETWALKER
-              </a>
+              </Link>
             </Col>
             <Col className="text-right">
               <NavMain className="justify-content-end" />

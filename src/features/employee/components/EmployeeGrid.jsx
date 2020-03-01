@@ -1,9 +1,10 @@
 import React, { Component, Fragment } from 'react';
+import { withRouter } from "react-router";
+import axios from 'axios';
 import EmployeeCard from "./EmployeeCard";
 import { MapExample } from "../../../components"
-import axios from 'axios';
 
-class EmployeeGrid extends Component {
+class inEmployeeGrid extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -52,6 +53,7 @@ class EmployeeGrid extends Component {
   }
 }
 
+const EmployeeGrid = withRouter(inEmployeeGrid);
 export {
   EmployeeGrid
 }

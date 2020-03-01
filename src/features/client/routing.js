@@ -10,7 +10,8 @@ import {
   Dueño
 } from "./components";
 
-function ClientRoutes() {
+function ClientRoutes(props) {
+  console.log("props", props)
   let { path } = useRouteMatch();
   return (
     <Switch>

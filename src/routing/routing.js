@@ -17,24 +17,28 @@ import {
 } from "./private-routing";
 
 function MainRoutes(props) {
+  console.log("mainroutes", props)
   return (
     <Switch>
       <Route exact path="/login" component={LoginRoutes}>
       </Route>
       <PrivateRoute path="/client">
-        <ClientRoutes/>
+        <ClientRoutes />
       </PrivateRoute>
       <PrivateRoute path="/admin">
-        <AdminRoutes/>
+        <AdminRoutes />
       </PrivateRoute>
       <PrivateRoute path="/employee">
-        <EmployeesRoutes/> 
+        <EmployeesRoutes />
       </PrivateRoute>
-      {/* <Redirect
+      <Redirect
         to={{
           pathname: "/login"
         }}
-      /> */}
+      />
+      <Route path="*">
+        <h1>No existe esa ruta</h1>
+      </Route>
     </Switch>
   )
 }

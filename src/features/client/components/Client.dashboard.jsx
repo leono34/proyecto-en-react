@@ -61,19 +61,23 @@ class Dueño extends React.Component {
           <div className="col-md-12">
             <div className="row">
               <div className="col-md-3"></div>
-              <div className="col-md-8">
+              <div className="col-md-4">
                 <div className="row">
-                  <div className="Dueñocard">
-                  <Dueñocard/>
-                </div> 
-                  <div className="botonam">
-                    <Button> Añadir Mascota</Button>
-                  </div>
+                    <div className="Dueñocard">
+                    <Dueñocard/>
+                  </div> 
+                </div>
+              </div>
+              <div className="col-md-4">
+                <div className="row">
+                    <div className="botonam">
+                      <BotonFormulario> Añadir Mascota</BotonFormulario>
+                    </div>
                 </div>
               </div>
             </div>
           </div>
-          <Formascota/>
+{/* aqui iria el Formascota */}
         </div>
       </div>
     );

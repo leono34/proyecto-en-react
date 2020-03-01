@@ -53,38 +53,7 @@ class BotonFormulario extends React.Component {
   }
 }
 export { BotonFormulario };
-class CatyDog extends React.Component {
-  render() {
-    return (
-      <div>
-        <section
-          className="dog"
-          name="tipomascota"
-          value="Dog"
-          onChange={this.handleChange}
-        >
-          <Parrafo text="Dog" />
-        </section>
-      </div>
-    );
-  }
-}
-class DogyCat extends React.Component {
-  render() {
-    return (
-      <div>
-        <section
-          className="cat"
-          name="tipomascota"
-          value="cat"
-          onChange={this.handleChange}
-        >
-          <Parrafo text="Cat" />
-        </section>
-      </div>
-    );
-  }
-}
+
 
 class Formascota extends React.Component {
   constructor(props) {
@@ -98,6 +67,7 @@ class Formascota extends React.Component {
       meses: "",
       sexo: "",
       tipo: "",
+      photo:"",
       Castrado: "",
       infovet: "",
       infomasc: "",
@@ -128,6 +98,11 @@ class Formascota extends React.Component {
         console.log(json);
       });
   }
+  handleSubmit(event) {
+    alert('Your favorite flavor is: ' + this.state.value);
+    event.preventDefault();
+  }
+  
 
   componentDidMount() {
     fetch("http://localhost:3000/users")
@@ -149,15 +124,15 @@ class Formascota extends React.Component {
       <div>
         <div className="row">
           <div className="col-md-12 text">
-            <Parrafo text="Cual es tu tipo de Mascota?" />
             <div className="row">
               <div className="col-md-12">
                 <div className="row tabla">
+                  <Parrafo text="Cual es tu tipo de Mascota?" />
                   <div className="col-md-12">
                     <div className="row form-group">
                       <div className="col-md-12">
                         <div className="row form-group">
-                          <div className="col-md-4 mb-3 " id="nombre">
+                          <div className="col-md-3 mb-3 " id="nombre">
                             <label htmlfor="sexo">Sexo :</label>
                             <div className="radio">
                               <input
@@ -176,7 +151,7 @@ class Formascota extends React.Component {
                               Hembra
                             </div>
                           </div>
-                          <div className="col-md-4 mb-3 " id="nombre">
+                          <div className="col-md-3 mb-3 " id="nombre">
                             <label htmlfor="tipo">Tipo :</label>
                             <div className="radio">
                               <input
@@ -195,7 +170,7 @@ class Formascota extends React.Component {
                               Gato
                             </div>
                           </div>
-                          <div className="col-md-4 mb-3" id="nombre">
+                          <div className="col-md-2 mb-3" id="nombre">
                             <label htmlfor="Castrado">Castrado ?</label>
                             <div className="radio">
                               <input
@@ -213,6 +188,17 @@ class Formascota extends React.Component {
                               />
                               NO
                             </div>
+                          </div>
+                          <div className="col-md-4 mb-3" id="nombre">
+                            <label htmlfor="photo">Podemos verlo?</label>
+                            <input
+                              required
+                              type="file"
+                              name="photo"
+                              id="photo"
+                              value={this.state.photo}
+                              onChange={this.handleChange}
+                            />
                           </div>
                         </div>
                         <div className="row form-group">
@@ -352,10 +338,11 @@ class Formascota extends React.Component {
                             </div>
                           </div>
                           <div className="row">
-                            <div className="col ">
+                            <div className="col" onSubmit={this.handleSubmit}>
                               <Button
+                                type="submit"
+                                value="submit"
                                 variant="primary"
-                                onChange={this.handleSubmit}
                               >
                                 Agregar
                               </Button>

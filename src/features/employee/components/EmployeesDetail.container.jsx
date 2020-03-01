@@ -40,6 +40,8 @@ class EmployeesDetail extends React.Component {
       titulo,
       descripcion,
       foto,
+      fotoMask,
+      nombreMask
     } = this.state.info;
     console.log("hola render", this.state.info)
 
@@ -70,21 +72,20 @@ class EmployeesDetail extends React.Component {
             <div className="col-md col-lg-8  bg-light pt-3">
               <div className="row">
                 <div className="col-7 ">
-                  <h3 className="text-center">Perros que Cuide</h3>
+                  <h3 className="text-center">Mascotas que Cuide</h3>
                   <div className="dogs d-flex ">
                     <div className="profile_picture p-3 ">
-                      <img alt="mascota" className="  rounded-circle"
-                        src="{foto}" />
-                        <span className=" name d-flex justify-content-center ">gutty</span>
+                    
+                        <img  alt="mascota" className="  rounded-circle"  width="70"   src={fotoMask}  />
+                        <span className=" name d-flex justify-content-center ">{nombreMask}</span>
                       </div>
                     <div className=" profile_picture p-3 ">
-                      <img alt="woman" className="  rounded-circle" src="{foto}" />
-                        <span className=" name d-flex justify-content-center ">aitor</span>
+                    {/* <img  alt="mascota" className="  rounded-circle"  width="50"   src={fotoMask}  />
+                        <span className=" name d-flex justify-content-center ">{nombreMask}</span> */}
                       </div>
                     <div className=" profile_picture p-3 ">
-                      <img alt="woman" className="  rounded-circle"
-                        src="{foto}" />
-                        <span className=" name d-flex justify-content-center ">Ramiro</span>
+                    {/* <img  alt="mascota" className="  rounded-circle"  width="50"   src={fotoMask}  />
+                        <span className=" name d-flex justify-content-center ">{nombreMask}</span> */}
                     
                     </div>
                   </div>

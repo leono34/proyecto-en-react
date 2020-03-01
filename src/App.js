@@ -19,6 +19,8 @@ function App() {
         <Main>
           <MainRoutes />
         </Main>
+        
+       
         <Footer />
       </Router>
     </div>

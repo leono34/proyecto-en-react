@@ -4,7 +4,9 @@ import {Card} from 'react-bootstrap';
 import {
   Invita, Parrafo
  } from './Dueño.Component';
-import {BotonFormulario} from './Formulario.component';
+import {
+  BotonFormulario, Formularioto
+} from './Formulario.component';
 import {
   Usuario, Cards, Avatar
 } from '../../admin/components';
@@ -71,6 +73,7 @@ class Dueño extends React.Component {
                   <Dueñocard/>
                 </div> 
                   <div  className="">
+                    <Formularioto></Formularioto>
                   </div>
                 </div>
               </div>

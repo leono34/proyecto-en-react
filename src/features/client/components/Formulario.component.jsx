@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button } from 'react-bootstrap';
 import {Parrafo} from './Dueño.Component';
-import { Formularioto } from 'react-bootstrap';
+import { Form } from 'react-bootstrap';
 class Popup extends React.Component {
     render() {
       return (

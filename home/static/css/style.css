@@ -11,6 +11,15 @@ body {
   font-size: 1.1rem;
   color: #989898; 
  
+}video{
+  position:relative;
+  min-width: 100%;
+  min-height: 1300px;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: -1;
+
 }
 
 ::-moz-selection {
@@ -105,7 +114,7 @@ h1, h2, h3, h4, h5,
   .site-footer a {
     color: #999999; }
     .site-footer a:hover {
-      color: black; }
+      color: #91D5FF; }
   .site-footer ul li {
     margin-bottom: 10px; }
   .site-footer .footer-heading {

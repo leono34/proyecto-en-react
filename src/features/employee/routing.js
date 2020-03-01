@@ -15,14 +15,14 @@ function EmployeesRoutes(props) {
   let { path } = useRouteMatch();
   return (
     <Switch>
-      <Route exact path={`${path}`} component={EmployeeGrid}/>
+      <Route exact path={`${path}`} component={EmployeeGrid} />
       {/* <Route path={`${path}/edit`}>
         <UserEdit />
       </Route>
       <Route path={`${path}/create`}>
         <UserCreate />
       </Route> */}
-      <Route path={`${path}/:id`} component={EmployeesDetail}/>
+      <Route path={`${path}/:id`} component={EmployeesDetail} />
     </Switch>
   )
 }

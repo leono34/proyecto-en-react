@@ -6,19 +6,19 @@ class Formascota extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      tipomascota: "",
-      nomdueño: "",
-      peso: "",
-      raza: "",
-      año: "",
-      meses: "",
       sexo: "",
-      tipo: "",
-      photo:"",
-      Castrado: "",
-      infovet: "",
-      infomasc: "",
-      cuimasc: ""
+      // tipomascota: "",
+      // nomdueño: "",
+      // peso: "",
+      // raza: "",
+      // año: "",
+      // meses: "",
+      // tipo: "",
+      // photo:"",
+      // Castrado: "",
+      // infovet: "",
+      // infomasc: "",
+      // cuimasc: ""
     };
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -91,7 +91,7 @@ class Formascota extends React.Component {
                               Hembra
                             </div>
                           </div>
-                          <div className="col-md-3 mb-3 " id="nombre">
+                          {/* <div className="col-md-3 mb-3 " id="nombre">
                             <label htmlfor="tipo">Tipo :</label>
                             <div className="radio">
                               <input
@@ -129,7 +129,7 @@ class Formascota extends React.Component {
                               NO
                             </div>
                           </div>
-                          <div className="col-md-4 mb-3" id="nombre">
+                          <div className="col-md-4 mb-3" id="nombre"> 
                             <label htmlfor="photo">Podemos verlo?</label>
                             <input
                               required
@@ -221,7 +221,7 @@ class Formascota extends React.Component {
                             </div>
                           </div>
                         </div>
-                        <div className="row">
+                        <div className="row"> 
                           <div className="col-md-4" id="nombre">
                             <div className="form-group">
                               <label for="comment">
@@ -289,7 +289,7 @@ class Formascota extends React.Component {
                                 Agregar
                               </Button>
                             </div>
-                          </div>
+                          </div>*/}
                         </div>
                       </div>
                     </div>

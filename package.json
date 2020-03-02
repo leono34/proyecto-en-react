@@ -11,16 +11,22 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.4.0",
     "@testing-library/user-event": "^7.2.1",
+    "axios": "^0.19.2",
     "bootstrap": "^4.4.1",
     "jquery": "^3.4.1",
+    "leaflet": "^1.6.0",
     "node-sass": "^4.13.1",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
+<<<<<<< HEAD
     "react-avatar": "^3.9.1",
     "react-awesome-modal": "^2.0.5",
+=======
+>>>>>>> b5db91f31d4feb1f9603773e3ab6e7e168d9ea6e
     "react-bootstrap": "^1.0.0-beta.16",
     "react-dom": "^16.12.0",
     "react-fontawesome": "^1.7.1",
+    "react-leaflet": "^2.6.1",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.4.0",
     "react-user-avatar": "^1.10.0"

@@ -4,6 +4,11 @@ import { faStar } from '@fortawesome/free-solid-svg-icons';
 import { Container, Row, Col, Card } from 'react-bootstrap';
 import axios from 'axios';
 
+import {
+
+ 
+  Link
+} from "react-router-dom";
 class EmployeesDetail extends React.Component {
   constructor(props) {
     super(props);
@@ -31,7 +36,12 @@ class EmployeesDetail extends React.Component {
   render() {
     const {
       nombre,
-      apellido
+      apellido,
+      titulo,
+      descripcion,
+      foto,
+      fotoMask,
+      nombreMask
     } = this.state.info;
     console.log("hola render", this.state.info)
 
@@ -45,54 +55,38 @@ class EmployeesDetail extends React.Component {
       // </div>
       <div>
         <Container>
-          <Row>
-            <Col>
-              <Card>
-                <Card.Img variant="top" src="holder.js/100px180" />
-                <Card.Body>
-                  <Card.Title>Titulo</Card.Title>
-                  <Card.Text>
-                    Descripcion
-                  </Card.Text>
-                  {/* <Button variant="primary">Go somewhere</Button> */}
-                </Card.Body>
-              </Card>
-            </Col>
-            <Col>
-
-            </Col>
-          </Row>
+      
         </Container>
         <section className="container">
           <div className="row">
             <div className="col-md col-lg-4 p-3 ">
-              <div className="card" style={{ width: "18rem" }} >
-                <img className="card-img-top" alt="paseador" />
+              <div className="card" style={{ width: "30rem" }} >
+                <img className="card-img-top" alt="paseador"  width="200"   src={foto}  />
+                
                 <div className="card-body">
-                  <h5 className="card-title">titulo</h5>
-                  <p className="card-text">descripcion </p>
-                </div>
+                <h5 className="card-title">{titulo}</h5>
+                <p className="card-text">{descripcion}</p>
+                </div> 
               </div>
             </div>
             <div className="col-md col-lg-8  bg-light pt-3">
               <div className="row">
                 <div className="col-7 ">
-                  <h3 className="text-center">Perros que Cuide</h3>
+                  <h3 className="text-center">Mascotas que Cuide</h3>
                   <div className="dogs d-flex ">
                     <div className="profile_picture p-3 ">
-                      <a href="#"><img alt="mascota" className="  rounded-circle"
-                        src="{foto}" />
-                        <span className=" name d-flex justify-content-center ">gutty</span>
-                      </a></div>
+                    
+                        <img  alt="mascota" className="  rounded-circle"  width="70"   src={fotoMask}  />
+                        <span className=" name d-flex justify-content-center ">{nombreMask}</span>
+                      </div>
                     <div className=" profile_picture p-3 ">
-                      <a href=" #"><img alt="woman" className="  rounded-circle" src="{foto}" />
-                        <span className=" name d-flex justify-content-center ">aitor</span>
-                      </a></div>
+                    {/* <img  alt="mascota" className="  rounded-circle"  width="50"   src={fotoMask}  />
+                        <span className=" name d-flex justify-content-center ">{nombreMask}</span> */}
+                      </div>
                     <div className=" profile_picture p-3 ">
-                      <a href=" #"><img alt="woman" className="  rounded-circle"
-                        src="{foto}" />
-                        <span className=" name d-flex justify-content-center ">Ramiro</span>
-                      </a>
+                    {/* <img  alt="mascota" className="  rounded-circle"  width="50"   src={fotoMask}  />
+                        <span className=" name d-flex justify-content-center ">{nombreMask}</span> */}
+                    
                     </div>
                   </div>
                 </div>
@@ -140,7 +134,8 @@ class EmployeesDetail extends React.Component {
               </div>
             </div>
           </div>
-          <a href=" " type="button" className="btn btn-outline-warning  m-2 ">Atras</a>
+        
+          <Link to="/employee"   type="button" className="btn btn-outline-warning  m-2 " >Atras</Link>
         </section>
       </div>
     )

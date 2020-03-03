@@ -19,6 +19,7 @@ class MapExample extends Component<{}, State> {
 
   render() {
     const position = [this.state.lat, this.state.lng]
+   
     return (
       <Map className="map" center={position} zoom={this.state.zoom}>
         <TileLayer
@@ -30,6 +31,7 @@ class MapExample extends Component<{}, State> {
             A pretty CSS3 popup. <br /> Easily customizable.
           </Popup>
         </Marker>
+        
       </Map>
     )
   }

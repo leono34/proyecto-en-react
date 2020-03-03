@@ -1,74 +1,18 @@
-.dog {
-    border: 3px solid grey;
-    border-radius: 10px;
-    text-align: center;
-    height: 150px;
-    margin: 40px;
-    line-height:150px;
-    .span{
-      font-size: 30px;
-      height: 150px;
-      line-height:150px;
-        i {
-        display: inline-block;
-        vertical-align: middle;
-        line-height: normal;
-      }
-    } 
-    i{
-        font-size: 40px;
-    }
-  }
-  .dog:hover{
-      border: 4px solid rgb(102, 180, 50);
-      color: rgb(102, 180, 50);
-  }
-  .cat:hover{
-      border: 5px solid rgb(102, 180, 50);
-      color: rgb(102, 180, 50);
-  }
-  
-  .cat {
-    border: 3px solid grey;
-    border-radius: 10px;
-    font-size: 30px;
-    height: 150px;
-    margin: 40px;
-    line-height:150px;
-    text-align: center;
-    .span{
-      line-height:150px;
-      font-size: 30px;
-      height: 150px;
-    }
-  }
-  .cat .span i {
-    display: inline-block;
-    vertical-align: middle;
-    line-height: normal;
-  }
-  .cat i{
-      font-size: 40px;
-  }
-  /* fin gato perro */
-  /* inicio tabla */
-  
-
   .tabla{
-      margin: 0px 40px 40px 40px;
+      margin: 40px 40px 40px 40px;
       padding:20px ;
       border: 3px solid grey;
       border-radius: 5px;
       align-items: center;
   }
   .span:hover{
-    color: rgb(102, 180, 50);
+    color: rgb(145, 213, 255);
   }
   .tabla:hover{
-      border: 5px solid  rgb(102, 180, 50);
+      border: 5px solid  rgb(145, 213, 255);
   }
   #nombre:hover{
-      color: rgb(102, 180, 50);
+      color: rgb(145, 213, 255);
   }
   /* final tabla */
   /* inicio version */
@@ -98,18 +42,10 @@
       font-size: 30px;
   }
   .dog1:hover{
-      border: 5px solid rgb(102, 180, 50);
-      color: rgb(102, 180, 50);
+      border: 5px solid rgb(145, 213, 255);
+      color: rgb(145, 213, 255);
   }
   .cat1:hover{
-      border: 5px solid rgb(102, 180, 50);
-      color: rgb(102, 180, 50);
-  }
-  .boton{
-      align-items: center;
-      margin-left: auto;
-      margin-right: auto;
-  }
-  .boton:hover{
-      color: black;
+      border: 5px solid rgb(145, 213, 255);
+      color: rgb(145, 213, 255);
   }

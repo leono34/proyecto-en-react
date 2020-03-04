@@ -1,6 +1,7 @@
 import React from "react";
 import { withRouter } from "react-router";
 import { Nav } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 function inNavMain(props) {
   const {
@@ -20,7 +21,7 @@ function inNavMain(props) {
       onSelect={selectedKey => alert(`selected ${selectedKey}`)}
     >
       <Nav.Item>
-        <Nav.Link href="/home">Wellcome Administrador, Luis</Nav.Link>
+        <Link className="nav-link" to="/perfil">Wellcome Administrador, Luis</Link>
       </Nav.Item>
       <Nav.Item>
         <Nav.Link onClick={logout}>

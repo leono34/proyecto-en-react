@@ -19,7 +19,7 @@ class InSignIn extends React.Component {
       history
     } = this.props;
 
-    (sessionStorage.getItem("token")) ? history.push("client") : history.replace("login");
+    (sessionStorage.getItem("token")) ? history.push("cliente") : history.replace("login");
   }
 
   handleChange(event) {
@@ -34,11 +34,24 @@ class InSignIn extends React.Component {
   handleSubmit(event) {
     // llamada al api, y el api me tiene que retornar el token y tambien el rol
     event.preventDefault();
+    let obj = {};
+    if (this.state.username == "cliente") {
+      obj = {
+        rol: "client"
+      }
+    } else if (this.state.usermane == "cuidador") {
+      obj = {
+        rol: "cuidador"
+      }
+    }
+
     const {
       history
     } = this.props;
-    sessionStorage.setItem("token", "123abc")
-    history.push("client")
+    sessionStorage.setItem("token", "123abc");
+    sessionStorage.setItem("rol", obj.rol);
+    console.log(this.state.username);
+    (obj.rol === "client") ? history.push("cliente") : history.push("perfil")
   }
 
   render() {

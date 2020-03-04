@@ -25,7 +25,7 @@ class inEmployeeGrid extends Component {
     const splitUrl = url.split("/");
     const id = splitUrl[splitUrl.length - 2];
 
-    history.push(`${pathname}/${id}`)
+    history.push(`cuidadores/${id}`)
   }
   render() {
     const cards = this.state.employee.map((employee, id) => <EmployeeCard onClick={() => this.handleClickUser(employee)} {...employee} key={id} />)

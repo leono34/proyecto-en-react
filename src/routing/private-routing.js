@@ -4,7 +4,6 @@ import {
   Redirect
 } from "react-router-dom";
 
-
 function PrivateRoute(props) {
   let isLogin = sessionStorage.getItem("token");
   console.log("privateRoutes", props)

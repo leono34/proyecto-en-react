@@ -9,8 +9,6 @@ import {
 import Examples from './Card.component';
 import {Dueñocard} from './Card.component';
 
-
-
 class Dueño extends React.Component {
   constructor(props) {
     super(props);

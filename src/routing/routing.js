@@ -10,6 +10,7 @@ import {
   EmployeesRoutes,
   AdminRoutes,
   LoginRoutes,
+  ProfileRoutes
 } from "../features";
 
 import {
@@ -22,14 +23,17 @@ function MainRoutes(props) {
     <Switch>
       <Route exact path="/login" component={LoginRoutes}>
       </Route>
-      <PrivateRoute path="/client">
+      <PrivateRoute path="/cliente">
         <ClientRoutes />
       </PrivateRoute>
-      <PrivateRoute path="/admin">
+      {/* <PrivateRoute path="/admin">
         <AdminRoutes />
-      </PrivateRoute>
-      <PrivateRoute path="/employee">
+      </PrivateRoute> */}
+      <PrivateRoute path="/cuidadores">
         <EmployeesRoutes />
+      </PrivateRoute>
+      <PrivateRoute path="/perfil">
+        <ProfileRoutes />
       </PrivateRoute>
       <Redirect
         to={{

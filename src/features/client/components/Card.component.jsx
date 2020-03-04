@@ -23,25 +23,25 @@ export default class Examples extends Component {
     });
   }
 
-  render() {
-    return (
-      <section>
-        <Button type="button" value="Open" onClick={() => this.openModal()} >Añadir mascota</Button>
-        <Modal
-          visible={this.state.visible}
-          width="70%"
-          height="560"
-
-          effect="fadeInUp"
-          onClickAway={() => this.closeModal()}>
-          <div>
-            <Formascota />
-            <Button href="javascript:void(0);" onClick={() => this.closeModal()}>Close</Button>
-          </div>
-        </Modal>
-      </section>
-    );
-  }
+    render() {
+        return (
+            <section>
+                <Button  type="button" value="Open" onClick={() => this.openModal()} >Añadir mascota</Button>
+                <Modal 
+                    visible={this.state.visible}
+                    width="70%"
+                    height="600"
+                    
+                    effect="fadeInUp"
+                    onClickAway={() => this.closeModal()}>
+                    <div className="alineado">
+                        <Formascota/>
+                        <Button variant="warning" href="javascript:void(0);" onClick={() => this.closeModal()}>Close</Button>
+                    </div>
+                </Modal>
+            </section>
+        );
+    }
 }
 
 class Dueñocard extends React.Component {

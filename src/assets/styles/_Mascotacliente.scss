@@ -1,51 +1,19 @@
-  .tabla{
-      margin: 40px 40px 40px 40px;
-      padding:20px ;
-      border: 3px solid grey;
-      border-radius: 5px;
-      align-items: center;
-  }
-  .span:hover{
-    color: rgb(145, 213, 255);
-  }
-  .tabla:hover{
-      border: 5px solid  rgb(145, 213, 255);
-  }
-  #nombre:hover{
-      color: rgb(145, 213, 255);
-  }
-  /* final tabla */
-  /* inicio version */
-  .dog1 {
-      border: 3px solid grey;
-      border-radius: 10px;
-      text-align: center;
-      margin: 40px;
-      .span{
-        line-height:70px;
-        font-size: 30px;
-        height: 70px;
-      }
-    }
-  .cat1 {
-      border: 3px solid grey;
-      border-radius: 10px;
-      margin: 40px;
-      text-align: center;
-      .span{
-        line-height:70px;
-        font-size: 30px;
-        height: 70px;
-      }
-    }
-  .textomascota{
-      font-size: 30px;
-  }
-  .dog1:hover{
-      border: 5px solid rgb(145, 213, 255);
-      color: rgb(145, 213, 255);
-  }
-  .cat1:hover{
-      border: 5px solid rgb(145, 213, 255);
-      color: rgb(145, 213, 255);
-  }
+.form_general{
+  margin:30px;
+  padding: 30px;
+  border: 3px solid rgb(145, 213, 255);
+}
+
+#nombre:hover{
+    color: rgb(32, 120, 175);
+}
+.alineado{
+  align-items: center;
+}
+  
+  
+  
+  
+  
+  
+  

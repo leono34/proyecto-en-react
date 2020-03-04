@@ -59,8 +59,8 @@ class Dueñocard extends React.Component {
             <Card.Text>
                   <p>{this.props.mascotita.description} </p>
             </Card.Text>
-            <Card.Link href="#"><Button variant="info">Card Link</Button></Card.Link>
-            <Card.Link href="#"><Button variant="success">Another Link</Button></Card.Link>
+            <Card.Link href="#"><Button variant="success">EDITAR</Button></Card.Link>
+            <Card.Link href="#"><Button variant="danger">ELIMINAR</Button></Card.Link>
           </Card.Body>
         </Card>
     </div>

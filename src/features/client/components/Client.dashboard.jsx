@@ -8,6 +8,7 @@ import {
 } from '../../admin/components';
 import Examples from './Card.component';
 import {Dueñocard} from './Card.component';
+import {Formascota} from "./Formulario.component";
 
 
 
@@ -59,7 +60,7 @@ class Dueño extends React.Component {
                     text='Recomienda a un amigo, Gana S/20'
                     text1='Por cada amigo que reserve su estadia ,le daremos un credito de S/20 para su proxima
                      reserva.'/>
-                     <Button variant="danger" >Invita a un amigo</Button>
+                     <Button variant="warning" >Invita a un amigo</Button>
                   </div>
                 </div>
               </div>

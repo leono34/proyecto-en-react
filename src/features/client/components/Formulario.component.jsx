@@ -6,19 +6,19 @@ class Formascota extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
+      tipomascota: "",
+      nomdueño: "",
+      peso: "",
+      raza: "",
+      año: "",
+      meses: "",
       sexo: "",
-      // tipomascota: "",
-      // nomdueño: "",
-      // peso: "",
-      // raza: "",
-      // año: "",
-      // meses: "",
-      // tipo: "",
-      // photo:"",
-      // Castrado: "",
-      // infovet: "",
-      // infomasc: "",
-      // cuimasc: ""
+      tipo: "",
+      photo:"",
+      Castrado: "",
+      infovet: "",
+      infomasc: "",
+      cuimasc: ""
     };
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -71,7 +71,7 @@ class Formascota extends React.Component {
                   <div className="col-md-12">
                     <div className="row form-group">
                       <div className="col-md-12">
-                        <div className="row form-group">
+                        {/* <div className="row form-group">
                           <div className="col-md-3 mb-3 " id="nombre">
                             <label htmlfor="sexo">Sexo :</label>
                             <div className="radio">
@@ -91,7 +91,7 @@ class Formascota extends React.Component {
                               Hembra
                             </div>
                           </div>
-                          {/* <div className="col-md-3 mb-3 " id="nombre">
+                          <div className="col-md-3 mb-3 " id="nombre">
                             <label htmlfor="tipo">Tipo :</label>
                             <div className="radio">
                               <input
@@ -129,7 +129,7 @@ class Formascota extends React.Component {
                               NO
                             </div>
                           </div>
-                          <div className="col-md-4 mb-3" id="nombre"> 
+                          <div className="col-md-4 mb-3" id="nombre">
                             <label htmlfor="photo">Podemos verlo?</label>
                             <input
                               required
@@ -140,7 +140,8 @@ class Formascota extends React.Component {
                               onChange={this.handleChange}
                             />
                           </div>
-                        </div>
+                        
+                        </div> */}
                         <div className="row form-group">
                           <div className="col-md-3 mb-3" id="nombre">
                             <label htmlfor="nomdueño">Nombre :</label>
@@ -201,7 +202,7 @@ class Formascota extends React.Component {
                             </div>
                           </div>
                         </div>
-                        <div className="row form-group">
+                        {/* <div className="row form-group">
                           <div className="col-md-12 mb-3 " id="nombre">
                             <label htmlfor="raza">Tipo de Raza :</label>
                             <Parrafo
@@ -221,8 +222,9 @@ class Formascota extends React.Component {
                             </div>
                           </div>
                         </div>
-                        <div className="row"> 
-                          <div className="col-md-4" id="nombre">
+                         */}
+                        <div className="row">
+                          {/* <div className="col-md-4" id="nombre">
                             <div className="form-group">
                               <label for="comment">
                                 Nombre de la veterinaria e info de
@@ -279,22 +281,23 @@ class Formascota extends React.Component {
                                 cualquier instrucción de medicación
                               </label>
                             </div>
-                          </div>
-                          <div className="row">
-                          <div className="col" >
-                              <Button
-                                type="submit"
-                                value="submit"
-                                variant="primary">
-                                Agregar
-                              </Button>
-                            </div>
                           </div>*/}
+                          <div className="row"> 
+                            <div className="col" >
+                                <Button
+                                  type="submit"
+                                  value="submit"
+                                  variant="primary">
+                                  Agregar
+                                </Button>
+                              </div>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <p>{JSON.stringify(this.state)}</p>
+                  <p>{JSON.stringify(this.state.nomdueño)}</p>
+                  <p>{JSON.stringify(this.state.peso)}</p>
                 </div>
               </div>
             </div>
@@ -304,4 +307,4 @@ class Formascota extends React.Component {
     );
   }
 }
-export { Formascota };
+export { Formascota};

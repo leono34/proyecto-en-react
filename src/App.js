@@ -1,13 +1,12 @@
 import React from 'react';
-import { MainRoutes } from "./routing/routing";
+import { MainRoutes } from "./routing";
 import {
   HashRouter as Router
 } from "react-router-dom";
 import {
   Header,
   Main,
-  Footer,
-  HeaderPublic
+  Footer
 } from "./components";
 
 import "./assets/styles/main.scss";

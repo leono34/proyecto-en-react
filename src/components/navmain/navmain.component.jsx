@@ -1,17 +1,10 @@
 import React from "react";
-import { withRouter } from "react-router";
 import { Nav } from "react-bootstrap";
 
-function inNavMain(props) {
+function NavMain(props) {
   const {
-    className,
-    history
+    className
   } = props;
-
-  const logout = () => {
-    sessionStorage.removeItem("token");
-    history.push("login");
-  }
 
   return (
     <Nav
@@ -23,7 +16,7 @@ function inNavMain(props) {
         <Nav.Link href="/home">Wellcome Administrador, Luis</Nav.Link>
       </Nav.Item>
       <Nav.Item>
-        <Nav.Link onClick={logout}>
+        <Nav.Link>
           Logout
         </Nav.Link>
       </Nav.Item>
@@ -31,8 +24,4 @@ function inNavMain(props) {
   );
 }
 
-const NavMain = withRouter(inNavMain);
-
-export {
-  NavMain
-};
+export { NavMain };

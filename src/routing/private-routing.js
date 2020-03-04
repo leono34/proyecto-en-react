@@ -5,7 +5,7 @@ import {
 } from "react-router-dom";
 
 function PrivateRoute(props) {
-  let isLogin = sessionStorage.getItem("token");
+  let isLogin = sessionStorage.getItem("usuario");
   console.log("privateRoutes", props)
   const {
     children,

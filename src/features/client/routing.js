@@ -15,7 +15,7 @@ function ClientRoutes() {
   return (
     <Switch>
       <Route exact path={`${path}`} component={Client}/>
-      <Route path={`${path}`} component={Dueño}/>
+      <Route path={`${path}/perfil`} component={Dueño}/>
       {/* <Route path={`${path}/edit`}>
         <ProductEdit />
       </Route>

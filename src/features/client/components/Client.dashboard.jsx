@@ -10,8 +10,6 @@ import Examples from './Card.component';
 import {Dueñocard} from './Card.component';
 import {Formascota} from "./Formulario.component";
 
-
-
 class Dueño extends React.Component {
   constructor(props) {
     super(props);

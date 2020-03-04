@@ -29,8 +29,8 @@ class Auth extends React.Component {
               Sign Up
             </label>
             <div className="login-form">
-              <SignIn/>
-              <SignUp/>
+              <SignIn />
+              <SignUp />
             </div>
           </div>
         </div>

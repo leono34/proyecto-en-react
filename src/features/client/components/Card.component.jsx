@@ -30,13 +30,13 @@ export default class Examples extends Component {
                 <Modal 
                     visible={this.state.visible}
                     width="70%"
-                    height="560"
+                    height="600"
                     
                     effect="fadeInUp"
                     onClickAway={() => this.closeModal()}>
-                    <div>
+                    <div className="alineado">
                         <Formascota/>
-                           <Button href="javascript:void(0);" onClick={() => this.closeModal()}>Close</Button>
+                        <Button variant="warning" href="javascript:void(0);" onClick={() => this.closeModal()}>Close</Button>
                     </div>
                 </Modal>
             </section>

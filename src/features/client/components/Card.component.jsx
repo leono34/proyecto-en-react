@@ -36,7 +36,7 @@ export default class Examples extends Component {
                     onClickAway={() => this.closeModal()}>
                     <div>
                         <Formascota/>
-                        <Button href="javascript:void(0);" onClick={() => this.closeModal()}>Close</Button>
+                           <Button href="javascript:void(0);" onClick={() => this.closeModal()}>Close</Button>
                     </div>
                 </Modal>
             </section>

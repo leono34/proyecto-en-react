@@ -14,33 +14,28 @@ class EmployeesDetail extends React.Component {
   componentDidUpdate() {
     console.log("props", this.props)
   }
-<<<<<<< HEAD
-=======
   render() {
     const {
-      nombre,
-      apellido,
-      titulo,
-      descripcion,
-      foto,
-      fotoMask,
-      nombreMask
+      // nombre,
+      // apellido,
+      // titulo,
+      // descripcion,
+      // foto,
+      // fotoMask,
+      // nombreMask
     } = this.state.info;
     console.log("hola render", this.state.info)
->>>>>>> 74ad861c047ce53143f33ac26db705c59f8a9fc9
+  }
 
   
   render() {
     console.log(this.props.match.params.id)
     return (
       <div>
-<<<<<<< HEAD
-        EmployeesDetail {this.props.match.params.id}
-=======
-        <Container>
+       {/* <Container>
       
         </Container>
-        <section className="container">
+         <section className="container"> 
           <div className="row">
             <div className="col-md col-lg-4 p-3 ">
               <div className="card" style={{ width: "30rem" }} >
@@ -64,11 +59,11 @@ class EmployeesDetail extends React.Component {
                       </div>
                     <div className=" profile_picture p-3 ">
                     {/* <img  alt="mascota" className="  rounded-circle"  width="50"   src={fotoMask}  />
-                        <span className=" name d-flex justify-content-center ">{nombreMask}</span> */}
+                        <span className=" name d-flex justify-content-center ">{nombreMask}</span>
                       </div>
                     <div className=" profile_picture p-3 ">
                     {/* <img  alt="mascota" className="  rounded-circle"  width="50"   src={fotoMask}  />
-                        <span className=" name d-flex justify-content-center ">{nombreMask}</span> */}
+                        <span className=" name d-flex justify-content-center ">{nombreMask}</span> 
                     
                     </div>
                   </div>
@@ -119,8 +114,7 @@ class EmployeesDetail extends React.Component {
           </div>
         
           <Link to="/employee"   type="button" className="btn btn-outline-warning  m-2 " >Atras</Link>
-        </section>
->>>>>>> 74ad861c047ce53143f33ac26db705c59f8a9fc9
+        </section>*/}
       </div>
     )
   }

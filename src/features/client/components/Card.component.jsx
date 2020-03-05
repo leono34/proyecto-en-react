@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+ import React, { Component } from 'react';
 import Modal from 'react-awesome-modal';
 import { Formascota } from './Formulario.component';
 import { Button } from 'react-bootstrap';

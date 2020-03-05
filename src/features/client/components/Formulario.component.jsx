@@ -88,7 +88,7 @@ class Formascota extends React.Component {
               </Form.Group>
             </Form.Group>
           </Form.Row>
-
+{/* 
           <Form.Row>
             <Form.Group className="col-md-4" id="nombre">
               <label htmlFor="nom_masc">Nombre de la Mascota :</label>
@@ -142,6 +142,7 @@ class Formascota extends React.Component {
               </Form.Group>
             </Form.Group>
           </Form.Row>
+          */}
           <Form.Row >
             <Form.Group>
               <label htmlfor="comment">

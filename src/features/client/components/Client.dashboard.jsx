@@ -24,11 +24,6 @@ class Dueño extends React.Component {
           nom_due:"Rodrigo",
           nom_masc:"Doki",
           description:"Perro muy jugueton ,muy travieso pero eso muy obediente"
-        },
-        {
-          nom_due:"Isael",
-          nom_masc:"Tarzan",
-          description:"Perro muy jugueton ,muy travieso pero eso muy obediente"
         }
       ]
     }

@@ -58,11 +58,11 @@ class EmployeesDetail extends React.Component {
                         <span className=" name d-flex justify-content-center ">{nombreMask}</span>
                       </div>
                     <div className=" profile_picture p-3 ">
-                    {/* <img  alt="mascota" className="  rounded-circle"  width="50"   src={fotoMask}  />
+                    <img  alt="mascota" className="  rounded-circle"  width="50"   src={fotoMask}  />
                         <span className=" name d-flex justify-content-center ">{nombreMask}</span>
                       </div>
                     <div className=" profile_picture p-3 ">
-                    {/* <img  alt="mascota" className="  rounded-circle"  width="50"   src={fotoMask}  />
+                    <img  alt="mascota" className="  rounded-circle"  width="50"   src={fotoMask}  />
                         <span className=" name d-flex justify-content-center ">{nombreMask}</span> 
                     
                     </div>
@@ -113,8 +113,8 @@ class EmployeesDetail extends React.Component {
             </div>
           </div>
         
-          <Link to="/employee"   type="button" className="btn btn-outline-warning  m-2 " >Atras</Link>
-        </section>*/}
+          <Link to="/cuidadores"   type="button" className="btn btn-outline-warning  m-2 " >Atras</Link>
+       </section>*/}
       </div>
     )
   }

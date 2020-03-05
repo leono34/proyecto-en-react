@@ -135,7 +135,7 @@ class EmployeesDetail extends React.Component {
             </div>
           </div>
         
-          <Link to="/employee"   type="button" className="btn btn-outline-warning  m-2 " >Atras</Link>
+          <Link to="/cuidadores"   type="button" className="btn btn-outline-warning  m-2 " >Atras</Link>
         </section>
       </div>
     )

@@ -28,7 +28,7 @@ class MapExample extends Component<{}, State> {
         />
         <Marker position={position}>
           <Popup>
-            A pretty CSS3 popup. <br /> Easily customizable.
+            Bienvenidos a CodiGO  <br /> Sede : Lima Norte 
           </Popup>
         </Marker>
         

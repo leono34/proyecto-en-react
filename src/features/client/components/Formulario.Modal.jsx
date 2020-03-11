@@ -8,7 +8,10 @@ const FormularioModal = ({crearCard}) =>{
     const[agregar, actualizarMascota] = useState({
         mascota:'',
         dueño:'',
+        peso:'',
         raza:'',
+        timascota:'',
+        castrado:'',
         años:'',
         descripcion:'',
         cuidados:'',
@@ -23,14 +26,14 @@ const FormularioModal = ({crearCard}) =>{
         });
     }
     //extraciion de valores
-    const {mascota, dueño, raza, años,descripcion,cuidados}=agregar;
+    const {mascota, dueño,peso, raza,timascota,castrado, años,descripcion,cuidados}=agregar;
     //dar click al boton
     const submitForm = e =>{
         e.preventDefault();
         //validar
-        if (mascota.trim()=== '' || dueño.trim()=== '' ||
+        if (mascota.trim()=== '' || dueño.trim()=== '' || peso.trim()=== '' ||
          raza.trim()=== '' || años.trim()=== '' || descripcion.trim()=== ''
-         ||cuidados.trim()=== ''){
+         ||cuidados.trim()=== ''|| timascota.trim()=== '' ){
             actualizarError(true);
             return;
         }
@@ -44,7 +47,10 @@ const FormularioModal = ({crearCard}) =>{
         actualizarMascota({
         mascota:'',
         dueño:'',
+        peso:'',
         raza:'',
+        timascota:'',
+        castrado:'',
         años:'',
         descripcion:'',
         cuidados:'',
@@ -77,6 +83,15 @@ const FormularioModal = ({crearCard}) =>{
                     onChange={actualizarDato}
                     value={dueño}/>
                     <label
+                    >Cuanto pesa :</label>
+                    <input 
+                    type="number"
+                    name="peso"
+                    className="col"
+                    placeholder="Peso de la Mascota"
+                    onChange={actualizarDato}
+                    value={peso}/>
+                    <label
                     >Tipo de Raza:</label>
                     <input 
                     type="text"
@@ -86,11 +101,25 @@ const FormularioModal = ({crearCard}) =>{
                     onChange={actualizarDato}
                     value={raza}/>
                     <label>Tipo de Mascota :</label>
-                    <input 
-                    type="select" 
-                    className="col"/>
-
-
+                    <select 
+                    name="timascota"
+                    className="col"
+                    onChange={actualizarDato}
+                    value={timascota}>
+                      <option value="#"></option>
+                      <option value="perro">Perro</option>
+                      <option value="gato">Gato</option>
+                    </select>
+                    <label>Esta Castrado ?</label>
+                    <select 
+                    name="castrado"
+                    className="col"
+                    onChange={actualizarDato}
+                    value={castrado}>
+                      <option value="#"></option>
+                      <option value="si">SI</option>
+                      <option value="no">NO</option>
+                    </select>
                     <label
                     >Cuantos años tiene tu mascota :</label>
                     <input 

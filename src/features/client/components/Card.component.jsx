@@ -5,8 +5,11 @@ const CardMascota=({agregar, eliminarCard})=>(
     <div className="card">
         <p>Mascota: <span>{agregar.mascota}</span></p>
         <p>Dueño : <span>{agregar.dueño}</span></p>
-        <p>Fecha : <span>{agregar.raza}</span></p>
-        <p>Hora : <span>{agregar.años}</span></p>
+        <p>Peso : <span>{agregar.peso}</span></p>
+        <p>Raza : <span>{agregar.raza}</span></p>
+        <p>Tipo de mascota : <span>{agregar.timascota}</span></p>
+        <p>Castrado :<span>{agregar.castrado}</span></p>
+        <p>Cuantos años tiene : <span>{agregar.años}</span></p>
         <p>Descripcion : <span>{agregar.descripcion}</span></p>
         <p>Cuidados Mascota : <span>{agregar.cuidados}</span></p>
         <Button

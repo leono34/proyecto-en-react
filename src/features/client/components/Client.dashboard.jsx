@@ -1,5 +1,5 @@
 import React from 'react';
-import {CuerpoFormulario} from './Formulario.Component';
+import {CuerpoFormulario} from './Formulario.component';
 import {Usuario } from '../../admin/components/Admin.avatar';
 
 class Dueño extends React.Component {

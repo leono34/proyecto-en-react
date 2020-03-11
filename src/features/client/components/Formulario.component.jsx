@@ -23,8 +23,7 @@ function CuerpoFormulario (){
 
        //funcion que agrege los cards nuevos de los ya registrados
        const crearCard = card =>{
-           guardarAgregados([ ...agregados, card
-           ]);
+           guardarAgregados([ ...agregados, card]);
        }
        //funcion que elimina una cita por el id
        const eliminarCard =id=>{

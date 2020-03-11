@@ -8,9 +8,10 @@ const FormularioModal = ({crearCard}) =>{
     const[agregar, actualizarMascota] = useState({
         mascota:'',
         dueño:'',
-        fecha:'',
-        hora:'',
-        sintomas:''
+        raza:'',
+        años:'',
+        descripcion:'',
+        cuidados:'',
     });
     //otro estado
     const[ error, actualizarError ] = useState(false)
@@ -19,33 +20,35 @@ const FormularioModal = ({crearCard}) =>{
         actualizarMascota({
             ...agregar,
             [e.target.name]: e.target.value
-        })
+        });
     }
     //extraciion de valores
-    const {mascota, dueño, fecha, hora,sintomas}=agregar;
+    const {mascota, dueño, raza, años,descripcion,cuidados}=agregar;
     //dar click al boton
     const submitForm = e =>{
         e.preventDefault();
         //validar
         if (mascota.trim()=== '' || dueño.trim()=== '' ||
-         fecha.trim()=== '' || hora.trim()=== '' ||sintomas.trim()=== ''){
+         raza.trim()=== '' || años.trim()=== '' || descripcion.trim()=== ''
+         ||cuidados.trim()=== ''){
             actualizarError(true);
             return;
         }
         //eliminar el mensaje previo
         actualizarError(false);
         //selecionar id
-        agregar.id =uuid( );
+        agregar.id =uuid();
         //creaar el card
         crearCard(agregar);
         //reset el form
         actualizarMascota({
         mascota:'',
         dueño:'',
-        fecha:'',
-        hora:'',
-        sintomas:''
-        })
+        raza:'',
+        años:'',
+        descripcion:'',
+        cuidados:'',
+        });
     }
 
     return(
@@ -74,28 +77,44 @@ const FormularioModal = ({crearCard}) =>{
                     onChange={actualizarDato}
                     value={dueño}/>
                     <label
-                    >Fecha de Nacimiento:</label>
+                    >Tipo de Raza:</label>
                     <input 
-                    type="date"
-                    name="fecha"
+                    type="text"
+                    name="raza"
                     className="col"
+                    placeholder="Diga su raza o ponga Mixta"
                     onChange={actualizarDato}
-                    value={fecha}/>
+                    value={raza}/>
+                    <label>Tipo de Mascota :</label>
+                    <input 
+                    type="select" 
+                    className="col"/>
+
+
                     <label
-                    >Hora de reserva:</label>
+                    >Cuantos años tiene tu mascota :</label>
                     <input 
-                    type="time"
-                    name="hora"
+                    type="number"
+                    name="años"
                     className="col"
+                    placeholder="Digite solo Años"
                     onChange={actualizarDato}
-                    value={hora}/>
+                    value={años}/>
                     <label
                     >Descripcion de la mascota:</label>
                     <textarea 
                     className="col"
-                    name="sintomas"
+                    name="descripcion"
                     onChange={actualizarDato}
-                    value={sintomas}>
+                    value={descripcion}>
+                    </textarea>
+                    <label
+                    >Cuidados sobre tu Mascota:</label>
+                    <textarea 
+                    className="col"
+                    name="cuidados"
+                    onChange={actualizarDato}
+                    value={cuidados}>
                     </textarea>
                     <Button 
                     type="submit"

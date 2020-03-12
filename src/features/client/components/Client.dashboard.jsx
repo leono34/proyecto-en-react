@@ -8,7 +8,7 @@ class Dueño extends React.Component {
       <div>
           <div className="row mb-5">
               <Usuario/>
-          <div className="col-8  mt-3">
+          <div className="col-md-8  mt-3">
               <div className="card">
                   <div className="card-body">
                     <h3 className="card-title">Recomienda a un amigo, gana S/ 20 </h3>

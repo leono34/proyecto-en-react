@@ -28,7 +28,7 @@ export { Boton };
 class Cards extends React.Component {
   render() {
     return (
-      <div className="col-lg-4 p-5 text-center">
+      <div className="col-md-6 p-8 text-center">
         <svg className="bd-placeholder-img rounded-circle " width="140" height="140" xmlns="https://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140">
           <title>Placeholder</title>
           <rect width="100%" height="100%" fill="#777" />
@@ -46,7 +46,7 @@ export { Cards };
 
 function Usuario(props) {
     return (
-      <div className="col-lg-4 p-8 text-center d-inline-block">
+      <div className="col-md-6 p-8 text-center d-inline-block">
         <Avatar url={props.src} alt={props.alt}/>
         <h6> {props.name} </h6>
         <hr className="size:4px" />
@@ -63,7 +63,7 @@ export { Usuario };
 function Crud(props) {
   console.log("props", props);
   return (
-    <div className="col-lg-4 border border-info ">
+    <div className="col-auto col-md-4 border border-info ">
       <h2>Pagina del Administrado</h2>
       <p>Se pueden realizar varios CRUD</p>
       <p><a className="btn btn-secondary" href="#" role="button">CRUD &raquo;</a></p>

@@ -3,7 +3,8 @@ import { Container, Row, Col } from "react-bootstrap";
 import { withRouter } from "react-router";
 import { Link } from "react-router-dom";
 import { NavMain } from "../";
-import "./header.scss";
+import dogicon from "../header/paw-solid.svg";
+import FontAwesome from "react-fontawesome";
 class inHeader extends React.Component {
   constructor(props) {
     super(props);
@@ -27,9 +28,12 @@ class inHeader extends React.Component {
       <header className="header d-flex align-items-center">
         <Container>
           <Row>
-            <Col>
+            <Col className="dog_logo">
               <Link className="header__logo" to="/">
+                <div className="dog_logo">
+                  <img src={dogicon} alt="" />
                 PETWALKER
+                </div>
               </Link>
             </Col>
             <Col className="text-right">

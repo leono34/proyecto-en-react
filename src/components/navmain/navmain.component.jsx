@@ -33,12 +33,10 @@ class inNavMain extends React.Component {
     this.setState({
       name: (JSON.parse(sessionStorage.getItem("usuario"))) ? JSON.parse(sessionStorage.getItem("usuario")).usuario : ''
     })
-    console.log("sssssssssssssssssssssss")
     console.log(("value", JSON.parse(sessionStorage.getItem("usuario"))) ? JSON.parse(sessionStorage.getItem("usuario")).usuario : '')
   }
 
   componentWillReceiveProps() {
-    console.log("sssssssssssssssssssssss")
     this.setState({
       name: (JSON.parse(sessionStorage.getItem("usuario"))) ? JSON.parse(sessionStorage.getItem("usuario")).usuario : ''
     })
@@ -53,6 +51,12 @@ class inNavMain extends React.Component {
       >
         <Nav.Item>
           <Link className="nav-link" to="/perfil">Wellcome {this.state.name}</Link>
+        </Nav.Item>
+        <Nav.Item>
+          <Link className="nav-link" to="/home" >Inicio</Link>
+        </Nav.Item>
+        <Nav.Item>
+          <Link className="nav-link" >Servicios</Link>
         </Nav.Item>
         <Nav.Item>
           <Nav.Link onClick={this.logout}>

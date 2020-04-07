@@ -1,20 +1,20 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import "./footer.scss";
-import {  faPhone, faEnvelope, faGlobe } from '@fortawesome/free-solid-svg-icons';
+import { faPhone, faEnvelope, faGlobe } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import {
-//   faFacebook,
-//   faInstagram,
-//   faGithub,
-//   faYoutube,
+import {
+  faFacebook,
+  faInstagram,
+  faGithub,
+  faYoutube,
 
-// } from "@fortawesome/free-brands-svg-icons";
+} from "@fortawesome/free-brands-svg-icons";
 
 function Footer() {
-  // const github = "https://github.com/leono34/proyecto-en-react.git";
-  // const facebook = "";
-  // const instagram = "";
+  const github = "https://github.com/leono34/proyecto-en-react.git";
+  const facebook = "";
+  const instagram = "";
   let fecha = new Date();
   let ano = fecha.getFullYear();
   return (
@@ -58,24 +58,43 @@ function Footer() {
                 <li>
                   <p><FontAwesomeIcon icon={faGlobe} /> Calle Boston 220 Las Vegas</p>
                 </li>
-                <li>              
+                <li>
                   <p> <FontAwesomeIcon icon={faPhone} /> 51-123 456 78 9</p>
                 </li>
                 <li>
-                   <p><FontAwesomeIcon icon={faEnvelope} /> petwalker@gmail.com</p>
+                  <p><FontAwesomeIcon icon={faEnvelope} /> petwalker@gmail.com</p>
                 </li>
-  
+
               </ul>
             </div>
           </Col>
         </Row>
-        <Row className="" >  
-        <Col sm="12" >
-  <p className="copyright text-center  ">Todos los derechos reservados Copyright {ano} &nbsp;|&nbsp; <b>Petwalker</b> &nbsp;</p>
-        </Col>
+
+        <Row className="" >
+          <Col sm="12" >
+            <ul className="list-group list-icons-social">
+              <li >
+                <a href={facebook} target="_blank"><FontAwesomeIcon icon={faFacebook} size="2x" /></a>
+              </li>
+              <li>
+                <a href={instagram} target="_blank"><FontAwesomeIcon icon={faInstagram} size="2x" /></a>
+              </li>
+              <li>
+                <a href={github} target="_blank"><FontAwesomeIcon icon={faGithub} size="2x" /></a>
+              </li>
+              <li>
+                <a href={github} target="_blank"><FontAwesomeIcon icon={faYoutube} size="2x" /></a>
+              </li>
+            </ul>
+          </Col>
+        </Row>
+        <Row className="" >
+          <Col sm="12" >
+            <p className="copyright text-center  ">Todos los derechos reservados Copyright {ano} &nbsp;|&nbsp; <b>Petswalkers</b> &nbsp;</p>
+          </Col>
         </Row>
       </Container>
-      
+
     </footer>
   );
 }

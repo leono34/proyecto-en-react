@@ -39,15 +39,33 @@
 
 .header {
   background: #91d5ff;
-  min-height: 120px;
+  min-height: 100px;
   color: #000;
 
   &__logo {
-    font-size: 24px;
+    font-size: 30px;
     color: white;
-
-    &:hover {
-      
-    }
+    padding-left: 10px;
   }
+  a:hover{
+    transition: 1s;
+    color: white;
+  }
+  .dog_logo img{
+    width: 30px;
+    height: auto;
+    padding-right: 10px;
+    color: white;
+  }
+  .dog_logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+}
+
+@media screen and (max-width: 1000px){
+  .header{background: red;}
 }

@@ -9,15 +9,15 @@ function SignUp() {
       </div>
       <div className="group">
         <label htmlFor="pass" className="label">Password</label>
-        <input id="pass" type="password" className="input" datatype="password" />
+        <input id="" type="password" className="input" datatype="password" />
       </div>
       <div className="group">
         <label htmlFor="pass" className="label">Repeat Password</label>
-        <input id="pass" type="password" className="input" datatype="password" />
+        <input id="" type="password" className="input" datatype="password" />
       </div>
       <div className="group">
         <label htmlFor="pass" className="label">Email Address</label>
-        <input id="pass" type="text" className="input" />
+        <input id="" type="text" className="input" />
       </div>
       <div className="group">
         <input type="submit" className="button" value="Sign Up" />

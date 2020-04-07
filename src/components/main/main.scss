@@ -1,3 +1,9 @@
 .main {
-    padding: 20px;
+  padding: 20px;
+  .container {
+    height: 100vh;
+  }
+  background-image: url("https://s1.1zoom.me/b5050/976/Dogs_Sky_Schnauzer_Front_524922_3840x2400.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }

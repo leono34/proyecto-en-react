@@ -37,7 +37,7 @@ function MainRoutes(props) {
       </PrivateRoute>
       <Redirect
         to={{
-          pathname: "/login"
+          pathname: "/"
         }}
       />
       <Route path="*">

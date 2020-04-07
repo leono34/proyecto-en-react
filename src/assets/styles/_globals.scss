@@ -15,6 +15,10 @@ body {
   flex-direction: column;
   height: 100vh;
 
+  .nav-link{
+    font-size: 2.0rem;
+  }
+
   .main {
     flex-grow: 1;
   }
